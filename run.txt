@@ -1,0 +1,3 @@
+g++ dominios.cpp entidades.cpp testesDominios.cpp testesEntidades.cpp main.cpp
+
+./a.out
