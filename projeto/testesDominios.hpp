@@ -198,7 +198,7 @@ public:
 class TUHorario{
 private:
     const string VALOR_VALIDO = "23:59";
-    const string VALOR_INVALIDO = "23:59:";
+    const string VALOR_INVALIDO = "23:75";
     Horario *horario;
     int estado;                            
     void setUp();
@@ -215,7 +215,7 @@ public:
 class TUIdioma{
 private:
     const string VALOR_VALIDO = "Mandarim";
-    const string VALOR_INVALIDO = "Mandafigado";
+    const string VALOR_INVALIDO = "Ruço";
     Idioma *idioma;
     int estado;                            
     void setUp();
