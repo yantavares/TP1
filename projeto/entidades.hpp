@@ -9,7 +9,7 @@
 
 using namespace std;
 
-/// @brief Criancao do Usuario:
+/// @brief Criacao do Usuario:
 ///
 /// Usuario contem entidades Nome, Email e Senha.
 
