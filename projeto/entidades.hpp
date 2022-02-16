@@ -10,7 +10,7 @@
 using namespace std;
 
 // TODO ---------------- USUARIO --------------------------
-/// Criancao do Usuario:
+/// @brief Criancao do Usuario:
 ///
 /// Usuario contem entidades Nome, Email e Senha.
 
@@ -93,7 +93,7 @@ inline Senha Usuario::getSenha() const {
 
 
 // TODO ---------------- AVALIACAO --------------------------
-/// Criacao da Avaliacao
+/// @brief Criacao da Avaliacao
 /// 
 /// Avaliacao contem codigo, nora e descricao
 class Avaliacao{
@@ -181,7 +181,7 @@ inline Descricao Avaliacao::getDescricao() const {
 
 
 // TODO ---------------- EXCURSAO --------------------------
-/// Criacao da Excursao
+/// @brief Criacao da Excursao
 ///
 /// Excursao contem titulo, nota, cidade, duracao, descricao, endereco e codigo
 class Excursao{
@@ -367,7 +367,7 @@ inline Nota Excursao::getNota() const {
 }
 
 // TODO ---------------- SESSAO --------------------------
-/// Criacao da Sessao
+/// @brief Criacao da Sessao
 ///
 /// A Sessao contem codigo, data, horario e idioma
 
