@@ -341,8 +341,3 @@ void Cidade::setValor(string valor){
     validar(valor);
     this->valor = valor;
 }
-
-int main(){
-
-    return 0;
-}
