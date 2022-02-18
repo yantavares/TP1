@@ -200,7 +200,10 @@ void Endereco::setValor(string valor){
 // Definicoes de metodos da classe Titulo
 
 void Titulo::validar(string titulo){
-    if(titulo.size() < 5 || titulo.size() > 20){
+    int i,totChar;
+    totChar=0;
+    for(i=0; titulo[i] != '\0'; i++){if(titulo[i]!=' '){totChar++;}}
+    if(totChar< 5 || totChar > 20){
         throw invalid_argument("Precisa ter de 5 a 20 caracteres a endereco");
     }
     char x = '1';
