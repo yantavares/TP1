@@ -9,7 +9,7 @@
 using namespace std;
 
 // Teste de unidade da classe Usuario
-// Classe feita por Yan Tavares 202014323
+// Classe feita por Mateus Gomes de Araujo 202014440
 class TUUsuario {
 private:
 
@@ -45,7 +45,7 @@ public:
     int run();
 };
 // Teste de unidade da classe Avaliacao
-// Classe feita por Yan Tavares 202014323
+// Classe feita por Mateus Gomes de Araujo 202014440
 class TUAvaliacao {
 private:
 

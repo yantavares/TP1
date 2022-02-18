@@ -12,7 +12,7 @@ using namespace std;
 /// @brief Criacao do Usuario:
 ///
 /// Usuario contem entidades Nome, Email e Senha.
-
+// Classe criada por Guilherme Goncalves Soares 202042865
 class Usuario{
 private:
     Nome nome;
@@ -94,6 +94,7 @@ inline Senha Usuario::getSenha() const {
 /// @brief Criacao da Avaliacao
 /// 
 /// Avaliacao contem codigo, nora e descricao
+// Classe criada por Guilherme Goncalves Soares 202042865
 class Avaliacao{
 private:
     Codigo codigo;
@@ -178,6 +179,7 @@ inline Descricao Avaliacao::getDescricao() const {
 /// @brief Criacao da Excursao
 ///
 /// Excursao contem titulo, nota, cidade, duracao, descricao, endereco e codigo
+// Classe criada por Guilherme Goncalves Soares 202042865
 class Excursao{
 private:
     Titulo titulo;
@@ -360,7 +362,7 @@ inline Nota Excursao::getNota() const {
 /// @brief Criacao da Sessao
 ///
 /// A Sessao contem codigo, data, horario e idioma
-
+// Classe criada por Guilherme Goncalves Soares 202042865
 class Sessao{
 private:
     static string idiomas[11];

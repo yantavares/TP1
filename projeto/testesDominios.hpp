@@ -9,7 +9,7 @@
 using namespace std;
 
 // Declaração de classe de teste de unidade do domínio Nome
-// Classe feita por Yan Tavares 202014323
+// Classe feita por Mateus Gomes de Araujo 202014440
 class TUNome {
 private:
 
@@ -43,7 +43,7 @@ public:
 };
 
 // Declaração de classe de teste de unidade do domínio Email
-// Classe feita por Yan Tavares 202014323
+// Classe feita por Mateus Gomes de Araujo 202014440
 class TUEmail{
 private:
 
@@ -77,7 +77,7 @@ public:
 };
 
 // Declaração de classe de teste de unidade do domínio Senha
-// Classe feita por Yan Tavares 202014323
+// Classe feita por Mateus Gomes de Araujo 202014440
 class TUSenha{
 private:
 
@@ -111,7 +111,7 @@ public:
 };
 
 // Declaração de classe de teste de unidade do domínio Codigo
-// Classe feita por Yan Tavares 202014323
+// Classe feita por Mateus Gomes de Araujo 202014440
 class TUCodigo{
 private:
 
@@ -145,7 +145,7 @@ public:
 };
 
 // Declaração de classe de teste de unidade do domínio Nota
-// Classe feita por Yan Tavares 202014323
+// Classe feita por Mateus Gomes de Araujo 202014440
 class TUNota{
 private:
 
@@ -179,7 +179,7 @@ public:
 };
 
 // Declaração de classe de teste de unidade do domínio Descricao
-// Classe feita por Yan Tavares 202014323
+// Classe feita por Mateus Gomes de Araujo 202014440
 class TUDescricao{
 private:
 
@@ -213,7 +213,7 @@ public:
 };
 
 // Declaração de classe de teste de unidade do domínio Titulo
-// Classe feita por Yan Tavares 202014323
+// Classe feita por Mateus Gomes de Araujo 202014440
 class TUTitulo{
 private:
     // Definições de constantes para evitar números mágicos.
@@ -246,7 +246,7 @@ public:
 };
 
 // Declaração de classe de teste de unidade do domínio Cidade
-// Classe feita por Yan Tavares 202014323
+// Classe feita por Mateus Gomes de Araujo 202014440
 class TUCidade{
 private:
     // Definições de constantes para evitar números mágicos.
@@ -279,7 +279,7 @@ public:
 };
 
 // Declaração de classe de teste de unidade do domínio Duracao
-// Classe feita por Yan Tavares 202014323
+// Classe feita por Mateus Gomes de Araujo 202014440
 class TUDuracao{
 private:
     // Definições de constantes para evitar números mágicos.
@@ -312,7 +312,7 @@ public:
 };
 
 // Declaração de classe de teste d// Metodo que executa o testee unidade do domínio Endereco
-// Classe feita por Yan Tavares 202014323
+// Classe feita por Mateus Gomes de Araujo 202014440
 class TUEndereco{
 private:
     // Definições de constantes para evitar números mágicos.
@@ -345,7 +345,7 @@ public:
 };
 
 // Declaração de classe de teste de unidade do domínio Data
-// Classe feita por Yan Tavares 20// Metodo que executa o teste2014323
+// Classe feita por Mateus Gomes de Araujo 20// Metodo que executa o teste2014323
 class TUData{
 private:
     // Definições de constantes para evitar números mágicos.
@@ -378,7 +378,7 @@ public:
 };
 
 // Declaração de classe de teste de unidade do domínio Horario
-// Classe feita por Yan Tavares 202014323
+// Classe feita por Mateus Gomes de Araujo 202014440
 class TUHorario{
 private:
     // Definições de constantes para evitar números mágicos.
@@ -411,7 +411,7 @@ public:
 };
 
 // Declaração de classe de teste de unidade do domínio Idioma
-// Classe feita por Yan Tavares 202014323
+// Classe feita por Mateus Gomes de Araujo 202014440
 class TUIdioma{
 private:
     // Definições de constantes para evitar números mágicos.
