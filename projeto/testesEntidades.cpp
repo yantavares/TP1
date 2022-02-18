@@ -1,9 +1,10 @@
 #include "testesEntidades.hpp"
-
 #include <iostream>
 #include <string.h>
 
 using namespace std;
+
+// Criancao dos metodos para testes de entidade Usuario
 
 void TUUsuario::setUp(){
     usuario = new Usuario();
@@ -41,6 +42,7 @@ int TUUsuario::run(){
     return estado;
 }
 
+// Criacoa dos metodos para testes da entidade Avaliacao
 
 void TUAvaliacao::setUp(){
     avaliacao = new Avaliacao();
@@ -77,6 +79,8 @@ int TUAvaliacao::run(){
     tearDown();
     return estado;
 }
+
+// Criacoa dos metodos para testes da entidade Excursao
 
 void TUExcursao::setUp(){
     excursao = new Excursao();
@@ -140,10 +144,7 @@ int TUExcursao::run(){
     return estado;
 }
 
-
-
-
-
+// Criacoa dos metodos para testes da entidade Sessao
 
 void TUSessao::setUp(){
     sessao = new Sessao();
