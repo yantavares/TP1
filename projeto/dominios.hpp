@@ -138,7 +138,7 @@ inline string Senha::getValor() const{
 ///
 /// Regras de formato:
 ///
-/// - Formato DDDDDDX onde D eh um digito e X eh digito verificador seguindo o Luhn algorithm;
+/// - Formato DDDDDDX onde D eh um digito e X eh digito verificador seguindo o Algoritmo de Luhn;
 ///
 // Classe Codigo feita por Yan Tavares 202014323
 

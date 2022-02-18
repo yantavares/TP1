@@ -108,7 +108,7 @@ void Horario::setValor(string valor){
 
 // Definicoes de metodos da classe Codigo
 
-// Algoritmo para checar digito verificador (algoritmo de Luhn)
+// Algoritmo para checar digito verificador (Algoritmo de Luhn)
 bool luhn(const string& codigo)
 { 
     int soma = 0;                       // Soma dos digitos eh inicializada
