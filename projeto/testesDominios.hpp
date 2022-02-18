@@ -117,7 +117,7 @@ private:
 
     // Definições de constantes para evitar números mágicos.
    
-    const string VALOR_VALIDO = "1234561";
+    const string VALOR_VALIDO = "6234561";
     const string VALOR_INVALIDO = "1234568";
 
     // Referência ao objeto a ser testado

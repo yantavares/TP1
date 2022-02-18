@@ -50,7 +50,7 @@ class TUAvaliacao {
 private:
 
     // Valor valido de codigo para o teste da entidade
-    const string VALOR_VALIDO_CODIGO  = "1234513";
+    const string VALOR_VALIDO_CODIGO  = "6245161";
     // Valor valido de nota para o teste da entidade
     static const int VALOR_VALIDO_NOTA  = 1;
     // Valor valido de descricao para o teste da entidade
@@ -94,7 +94,7 @@ private:
     // Valor valido de endereco para o teste da entidade
     const string VALOR_VALIDO_ENDERECO  = "Quadra QC1 Cj A BL 6";
     // Valor valido de codigo para o teste da entidade
-    const string VALOR_VALIDO_CODIGO  = "1234522";
+    const string VALOR_VALIDO_CODIGO  = "9105131";
 
     // Referencia para o objeto a ser testado
     Excursao *excursao;
@@ -122,7 +122,7 @@ public:
 class TUSessao {
 private:
     // Valor valido de codigo para o teste da entidade
-    const string VALOR_VALIDO_CODIGO  = "5432111";
+    const string VALOR_VALIDO_CODIGO  = "8105231";
     // Valor valido de data para o teste da entidade
     const string VALOR_VALIDO_DATA  = "12-Nov-2001";
     // Valor valido de horario para o teste da entidade

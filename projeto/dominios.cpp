@@ -113,8 +113,10 @@ void Horario::setValor(string valor){
 // Algoritmo para checar digito verificador
 bool luhn(const string& codigo)
 { 
-    int soma = 0, posPar = false;
-    for (int i = 7 - 1; i >= 0; i--) {
+    int soma = 0;
+    bool posPar = false;
+    
+    for (int i = 6; i >= 0; i--) {
  
         int d = codigo[i] - '0';
  
