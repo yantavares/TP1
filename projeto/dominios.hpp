@@ -19,7 +19,7 @@ using namespace std;
 /// - Nao ha espaços em sequencia;
 /// - Primeira letra do nome eh maiuscula.
 ///
-
+///
 // Classe Nome feita por Yan Tavares 202014323
 
 
@@ -140,7 +140,6 @@ inline string Senha::getValor() const{
 ///
 /// - Formato DDDDDDX onde D eh um digito e X eh digito verificador seguindo o Luhn algorithm;
 ///
-
 // Classe Codigo feita por Yan Tavares 202014323
 
 class Codigo{
@@ -177,9 +176,7 @@ inline string Codigo::getValor() const{
 ///
 /// - Numero de 0 a 5.
 ///
-
 // Classe Nota feita por Yan Tavares 202014323
-
 class Nota{
     private:
         int valor;
@@ -214,7 +211,6 @@ inline int Nota::getValor() const{
 ///
 /// - 0 a 30 caracteres sem espaços ou pontos em sequencia.
 ///
-
 // Classe Descricao feita por Yan Tavares 202014323
 class Descricao{
     private:
@@ -253,7 +249,6 @@ inline string Descricao::getValor() const{
 ///
 /// - 5 a 20 caracteres sem espaços ou pontos em sequencia.
 ///
-
 // Classe Titulo feita por Yan Tavares 202014323
 class Titulo{
     private:
@@ -289,7 +284,7 @@ inline string Titulo::getValor() const{
 /// Regras de formato:
 ///
 /// - Cidades disponiveis: Hong   Kong,   Bangkok,   Macau,   Singapura,   Londres,   Paris,  Dubai,   Delhi,   Istambul,  Kuala, Lumpur, Nova Iorque, Antalya, Mumbai, Shenzhen e Phuket.
-
+///
 // Classe Cidade feita por Yan Tavares 202014323
 class Cidade{
     private:
@@ -325,7 +320,7 @@ inline string Cidade::getValor() const{
 /// Regras de formato:
 ///
 /// - Duracoes disponiveis: 30, 60, 90, 120 ou 180 minutos.
-
+///
 // Classe Duracao feita por Yan Tavares 202014323
 class Duracao{
     private:
@@ -359,7 +354,6 @@ inline int Duracao::getValor() const{
 /// Regras de formato:
 ///
 /// - 0 a 20 caracteres seme spaços ou pontos em sequencia.
-
 // Classe Endereco feita por Yan Tavares 202014323
 class Endereco{
     private:
@@ -400,9 +394,7 @@ inline string Endereco::getValor() const{
 /// - Mes sao as tres prmeiras letras de cada mes do ano escritas por extenso;
 /// - AAAA eh numero de 2000 a 9999;
 /// - Anos bissextos sao considerados.
-
 // Classe Data feita por Yan Tavares 202014323
-
 class Data{
     private:
         static string meses[12]; // vetor contendo meses validos
@@ -440,10 +432,7 @@ inline string Data::getValor() const{
 /// - Formato HH : MM;
 /// - HH eh numero de 00 a 23;
 /// - MM eh numero de 00 a 59;
-
-
 // Classe Horario feita por Yan Tavares 202014323
-
 class Horario{
     private:
         string valor;
@@ -478,8 +467,6 @@ inline string Horario::getValor() const{
 ///
 /// - Idiomas disponiveis: Inglês,   Chinês   Mandarim,   Hindi,   Espanhol,   Francês,   Árabe,   Bengali,   Russo,   Português, Indonésio;
 /// - Desconsiderar acentuaçao dos idiomas.
-
-
 // Classe Idioma feita por Yan Tavares 202014323
 class Idioma{
     private:
