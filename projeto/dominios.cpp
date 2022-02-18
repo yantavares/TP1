@@ -5,6 +5,7 @@
 #include <map>
 #include <algorithm>
 #include <cstring>
+#include <bits/stdc++.h>
 
 #include "dominios.hpp"
 using namespace std;
@@ -109,6 +110,25 @@ void Horario::setValor(string valor){
 
 // Definicoes de metodos da classe Codigo
 
+// Algoritmo para checar digito verificador
+bool luhn(const string& codigo)
+{ 
+    int soma = 0, posPar = false;
+    for (int i = 7 - 1; i >= 0; i--) {
+ 
+        int d = codigo[i] - '0';
+ 
+        if (posPar == true)
+            d = d * 2;
+ 
+        soma += d / 10;
+        soma += d % 10;
+ 
+        posPar = !posPar;
+    }
+    return (soma % 10 == 0);
+}
+
 void Codigo::validar(string codigo){
     if(codigo.size() != 7){
         throw invalid_argument("O codigo tem que possuir 7 caracteres");
@@ -121,8 +141,8 @@ void Codigo::validar(string codigo){
     if(codigo.substr(0,6) == "000000"){
         throw invalid_argument("Nao existe codigo 000000");
     }
-    if(codigo[6] != '1' && codigo[6] != '2' && codigo[6] != '3'){
-        throw invalid_argument("Nao existe este digito verificador!");
+    if(not luhn(codigo)){
+        throw invalid_argument("Digito verificador incorreto");
     }
 }
 void Codigo::setValor(string valor){

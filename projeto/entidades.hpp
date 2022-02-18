@@ -152,9 +152,6 @@ public:
 };
 
 inline void Avaliacao::setCodigo(const Codigo &codigo){
-    if(codigo.getValor()[6] != '3'){
-        throw invalid_argument("Digito verificador invalido!");
-    }
     this -> codigo = codigo;
 }
 inline Codigo Avaliacao::getCodigo() const {
@@ -347,9 +344,6 @@ inline Descricao Excursao::getDescricao() const {
 
 
 inline void Excursao::setCodigo(const Codigo &codigo){
-    if(codigo.getValor()[6] != '2'){
-        throw invalid_argument("Digito verificador invalido!");
-    }
     this -> codigo = codigo;
 }
 inline Codigo Excursao::getCodigo() const {
@@ -444,9 +438,6 @@ public:
 };
 
 inline void Sessao::setCodigo(const Codigo &codigo){
-    if(codigo.getValor()[6] != '1'){
-        throw invalid_argument("Digito verificador invalido!");
-    }
     this -> codigo = codigo;
 }
 inline Codigo Sessao::getCodigo() const {
