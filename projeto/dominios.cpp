@@ -5,7 +5,6 @@
 #include <map>
 #include <algorithm>
 #include <cstring>
-#include <bits/stdc++.h>
 
 #include "dominios.hpp"
 using namespace std;
@@ -44,7 +43,6 @@ void Nome::setValor(string valor){
     validar(valor);
     this->valor = valor;
 }
-
 
 
 // Definicoes de metodos da classe Senha
