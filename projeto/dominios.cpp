@@ -10,8 +10,7 @@
 using namespace std;
 
 
-// TODO ----------------------- Nome --------------------------
-
+// Definicoes de metodos da classe Nome
 
 void Nome::validar(string nome){
     if(nome.size() < 5 || nome.size() > 20)
@@ -47,8 +46,7 @@ void Nome::setValor(string valor){
 
 
 
-// TODO ----------------------- Senha --------------------------
-
+// Definicoes de metodos da classe Senha
 
 void Senha::validar(string senha){
     map<char, bool>verificaRepeticao;
@@ -80,8 +78,7 @@ void Senha::setValor(string valor){
     this->valor = valor;
 }
 
-// TODO ----------------------- Idioma --------------------------
-
+// Definicoes de metodos da classe Idioma
 
 string Idioma::idiomas[11] = {"Ingles","Chines","Mandarim","Hindi",
 "Espanhol","Frances","Arabe","Bengali","Russo","Portugues","Indonesio"};
@@ -96,7 +93,7 @@ void Idioma::setValor(string valor){
     this->valor = valor;
 }
 
-// TODO ----------------------- Horario --------------------------
+// Definicoes de metodos da classe Horario
 
 void Horario::validar(string horario){
     int valorHoras = stoi(horario.substr(0,2));
@@ -110,7 +107,7 @@ void Horario::setValor(string valor){
     this->valor = valor;
 }
 
-// TODO ----------------------- Codigo --------------------------
+// Definicoes de metodos da classe Codigo
 
 void Codigo::validar(string codigo){
     if(codigo.size() != 7){
@@ -134,7 +131,7 @@ void Codigo::setValor(string valor){
 }
 
 
-// TODO ----------------------- Descricao --------------------------
+// Definicoes de metodos da classe Descricao
 
 void Descricao::validar(string descricao){
     if(descricao.size() <= 0 || descricao.size() > 30){
@@ -156,8 +153,7 @@ void Descricao::setValor(string valor){
     this->valor = valor;
 }
 
-// TODO ----------------------- Enderecos --------------------------
-
+// Definicoes de metodos da classe Endereco
 
 void Endereco::validar(string endereco){
     if(endereco.size() <= 0 || endereco.size() > 20){
@@ -179,7 +175,7 @@ void Endereco::setValor(string valor){
     this->valor = valor;
 }
 
-// TODO ----------------------- Titulo --------------------------
+// Definicoes de metodos da classe Titulo
 
 void Titulo::validar(string titulo){
     if(titulo.size() < 5 || titulo.size() > 20){
@@ -204,7 +200,7 @@ void Titulo::setValor(string valor){
     this->valor = valor;
 }
 
-// TODO ------------------------------ Data ------------------------------
+// Definicoes de metodos da classe Data
 
 void Data::validar(string data){
     map<string,int> meses = {
@@ -248,7 +244,8 @@ void Data::setValor(string valor){
     validar(valor);
     this->valor = valor;
 }
-// TODO ----------------------- Email --------------------------
+
+// Definicoes de metodos da classe Email
 
 void Email::validar(string email){
     int arroba = 0;
@@ -305,7 +302,8 @@ void Email::setValor(string valor){
     validar(valor);
     this->valor = valor;
 }
-// TODO ----------------------- Duracao --------------------------
+// Definicoes de metodos da classe Duracao
+
 void Duracao::validar(int duracao){
     if (duracao != 30 && duracao != 60 && duracao != 90 && duracao != 120 && duracao != 180)
         throw invalid_argument("Duracao invalida");
@@ -316,7 +314,8 @@ void Duracao::setValor(int valor){
 
 }
 
-// TODO ----------------------- Nota --------------------------
+// Definicoes de metodos da classe Nota
+
 void Nota::validar(int nota){
     if (nota != 0 && nota != 1 && nota != 2 && nota != 3 && nota != 4 && nota != 5)
         throw invalid_argument("Nota invalida");
@@ -327,7 +326,8 @@ void Nota::setValor(int valor){
 
 }
 
-// !!!!TODO ----------------------- Cidade --------------------------
+// Definicoes de metodos da classe Cidade
+
 string Cidade::cidades[16] = {"Hong Kong", "Bangkok", "Macau", "Singapura",
  "Londres", "Paris", "Dubai", "Delhi", "Istambul", "Kuala","Lumpur",
   "Nova Iorque", "Antalya", "Mumbai", "Shenzhen", "Phuket"};
