@@ -5,6 +5,8 @@
 
 using namespace std;
 
+// Definicoes de metodos de teste de unidade do dominio None
+
 void TUNome::setUp(){
     nome = new Nome();
     estado = SUCESSO;
@@ -44,7 +46,8 @@ int TUNome::run(){
     return estado;
 }
 
-// TODO -------------------------------------------------------------
+// Definicoes de metodos de teste de unidade do dominio Email
+
 void TUEmail::setUp(){
     email = new Email();
     estado = SUCESSO;
@@ -84,7 +87,8 @@ int TUEmail::run(){
     return estado;
 }
 
-// TODO -------------------------------------------------------------
+// Definicoes de metodos de teste de unidade do dominio Senha
+
 void TUSenha::setUp(){
     senha = new Senha();
     estado = SUCESSO;
@@ -124,7 +128,8 @@ int TUSenha::run(){
     return estado;
 }
 
-// TODO -------------------------------------------------------------
+// Definicoes de metodos de teste de unidade do dominio Codigo
+
 void TUCodigo::setUp(){
     codigo = new Codigo();
     estado = SUCESSO;
@@ -164,7 +169,8 @@ int TUCodigo::run(){
     return estado;
 }
 
-// TODO -------------------------------------------------------------
+// Definicoes de metodos de teste de unidade do dominio Nota
+
 void TUNota::setUp(){
     nota = new Nota();
     estado = SUCESSO;
@@ -203,7 +209,9 @@ int TUNota::run(){
     tearDown();
     return estado;
 }
-// TODO -------------------------------------------------------------
+
+// Definicoes de metodos de teste de unidade do dominio Descricao
+
 void TUDescricao::setUp(){
     descricao = new Descricao();
     estado = SUCESSO;
@@ -242,7 +250,9 @@ int TUDescricao::run(){
     tearDown();
     return estado;
 }
-// TODO -------------------------------------------------------------
+
+// Definicoes de metodos de teste de unidade do dominio Titulo
+
 void TUTitulo::setUp(){
     titulo = new Titulo();
     estado = SUCESSO;
@@ -281,7 +291,9 @@ int TUTitulo::run(){
     tearDown();
     return estado;
 }
-// TODO -------------------------------------------------------------
+
+// Definicoes de metodos de teste de unidade do dominio Cidade
+
 void TUCidade::setUp(){
     cidade = new Cidade();
     estado = SUCESSO;
@@ -321,7 +333,8 @@ int TUCidade::run(){
     return estado;
 }
 
-// TODO -------------------------------------------------------------
+// Definicoes de metodos de teste de unidade do dominio Duracao
+
 void TUDuracao::setUp(){
     duracao = new Duracao();
     estado = SUCESSO;
@@ -360,7 +373,9 @@ int TUDuracao::run(){
     tearDown();
     return estado;
 }
-// TODO -------------------------------------------------------------
+
+// Definicoes de metodos de teste de unidade do dominio Endereco
+
 void TUEndereco::setUp(){
     endereco = new Endereco();
     estado = SUCESSO;
@@ -400,7 +415,8 @@ int TUEndereco::run(){
     return estado;
 }
 
-// TODO -------------------------------------------------------------
+// Definicoes de metodos de teste de unidade do dominio Data
+
 void TUData::setUp(){
     data = new Data();
     estado = SUCESSO;
@@ -439,7 +455,9 @@ int TUData::run(){
     tearDown();
     return estado;
 }
-// TODO -------------------------------------------------------------
+
+// Definicoes de metodos de teste de unidade do dominio Horario
+
 void TUHorario::setUp(){
     horario = new Horario();
     estado = SUCESSO;
@@ -478,7 +496,9 @@ int TUHorario::run(){
     tearDown();
     return estado;
 }
-// TODO -------------------------------------------------------------
+
+// Definicoes de metodos de teste de unidade do dominio Idioma
+
 void TUIdioma::setUp(){
     idioma = new Idioma();
     estado = SUCESSO;
