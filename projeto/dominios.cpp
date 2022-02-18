@@ -118,10 +118,11 @@ bool luhn(const string& codigo)
  
         int d = codigo[i] - '0';        // char -> int
  
-        if (posPar == true)             // Se esta em posicao par, dobre o digito
+        if (posPar == true)             // Se esta em posicao par, dobra o digito
             d = d * 2;
  
-        soma += d / 10;                 // Se d tem 2 digitos, somar cada um dos dois
+        soma += d / 10;                 // Se d tem 2 digitos, somar cada um dos dois antes de entrar
+                                        // na soma total
         soma += d % 10;
  
         posPar = !posPar;
