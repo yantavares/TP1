@@ -110,25 +110,26 @@ void Horario::setValor(string valor){
 
 // Definicoes de metodos da classe Codigo
 
-// Algoritmo para checar digito verificador
+// Algoritmo para checar digito verificador (algoritmo de Luhn)
 bool luhn(const string& codigo)
 { 
-    int soma = 0;
-    bool posPar = false;
-    
+    int soma = 0;                       // Soma dos digitos eh inicializada
+    bool posPar = false;                // Checa se digito esta em posicao par (a partir da direita)
+
     for (int i = 6; i >= 0; i--) {
  
-        int d = codigo[i] - '0';
+        int d = codigo[i] - '0';        // char -> int
  
-        if (posPar == true)
+        if (posPar == true)             // Se esta em posicao par, dobre o digito
             d = d * 2;
  
-        soma += d / 10;
+        soma += d / 10;                 // Se d tem 2 digitos, somar cada um dos dois
         soma += d % 10;
  
         posPar = !posPar;
     }
-    return (soma % 10 == 0);
+    return (soma % 10 == 0);            // Se a soma total for divisivel por 10,
+                                        // retorna true.
 }
 
 void Codigo::validar(string codigo){
