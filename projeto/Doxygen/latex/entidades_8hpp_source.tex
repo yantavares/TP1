@@ -1,0 +1,227 @@
+\hypertarget{entidades_8hpp_source}{}\doxysection{entidades.\+hpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef ENTIDADES\_HPP\_INCLUDED}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define ENTIDADES\_HPP\_INCLUDED}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}dominios.hpp"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <stdexcept>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <string.h>}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{15 \textcolor{comment}{// Classe criada por Guilherme Goncalves Soares 202042865}}
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{class_usuario}{Usuario}}\{}
+\DoxyCodeLine{17 \textcolor{keyword}{private}:}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_nome}{Nome}} nome;}
+\DoxyCodeLine{19     \mbox{\hyperlink{class_email}{Email}} email;}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_senha}{Senha}} senha;}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{keyword}{public}:}
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_usuario_a006307ffca27e3c9b9587a0fb2c0ee5a}{setNome}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_nome}{Nome}} \&nome);}
+\DoxyCodeLine{37     \mbox{\hyperlink{class_nome}{Nome}} \mbox{\hyperlink{class_usuario_a712640c003aa66605846627f2c90db60}{getNome}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{47     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_usuario_aa52706ef18bfa39a16b0909ccd2becf8}{setEmail}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_email}{Email}} \&email);}
+\DoxyCodeLine{53     \mbox{\hyperlink{class_email}{Email}} \mbox{\hyperlink{class_usuario_a47a619f688d224dc0c4e926d1db35aa0}{getEmail}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{63     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_usuario_a126a54fc422205571c6db490dcb9ca03}{setSenha}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_senha}{Senha}} \&senha);}
+\DoxyCodeLine{69     \mbox{\hyperlink{class_senha}{Senha}} \mbox{\hyperlink{class_usuario_a8f78d3949b3a9492d0aa0a197860a972}{getSenha}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71 \};}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73 \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_usuario_a006307ffca27e3c9b9587a0fb2c0ee5a}{Usuario::setNome}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_nome}{Nome}}\& nome)\{}
+\DoxyCodeLine{74     \textcolor{keyword}{this} -\/> nome = nome;}
+\DoxyCodeLine{75 \}}
+\DoxyCodeLine{76 \textcolor{keyword}{inline} \mbox{\hyperlink{class_nome}{Nome}} \mbox{\hyperlink{class_usuario_a712640c003aa66605846627f2c90db60}{Usuario::getNome}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{77     \textcolor{keywordflow}{return} nome;}
+\DoxyCodeLine{78 \}}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80 \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_usuario_aa52706ef18bfa39a16b0909ccd2becf8}{Usuario::setEmail}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_email}{Email}}\& email)\{}
+\DoxyCodeLine{81     \textcolor{keyword}{this} -\/> email = email;}
+\DoxyCodeLine{82 \}}
+\DoxyCodeLine{83 \textcolor{keyword}{inline} \mbox{\hyperlink{class_email}{Email}} \mbox{\hyperlink{class_usuario_a47a619f688d224dc0c4e926d1db35aa0}{Usuario::getEmail}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{84     \textcolor{keywordflow}{return} email;}
+\DoxyCodeLine{85 \}}
+\DoxyCodeLine{86 \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_usuario_a126a54fc422205571c6db490dcb9ca03}{Usuario::setSenha}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_senha}{Senha}}\& senha)\{}
+\DoxyCodeLine{87     \textcolor{keyword}{this} -\/> senha = senha;}
+\DoxyCodeLine{88 \}}
+\DoxyCodeLine{89 \textcolor{keyword}{inline} \mbox{\hyperlink{class_senha}{Senha}} \mbox{\hyperlink{class_usuario_a8f78d3949b3a9492d0aa0a197860a972}{Usuario::getSenha}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{90     \textcolor{keywordflow}{return} senha;}
+\DoxyCodeLine{91 \}}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93 }
+\DoxyCodeLine{97 \textcolor{comment}{// Classe criada por Guilherme Goncalves Soares 202042865}}
+\DoxyCodeLine{98 \textcolor{keyword}{class }\mbox{\hyperlink{class_avaliacao}{Avaliacao}}\{}
+\DoxyCodeLine{99 \textcolor{keyword}{private}:}
+\DoxyCodeLine{100     \mbox{\hyperlink{class_codigo}{Codigo}} codigo;}
+\DoxyCodeLine{101     \mbox{\hyperlink{class_nota}{Nota}} nota;}
+\DoxyCodeLine{102     \mbox{\hyperlink{class_descricao}{Descricao}} descricao;}
+\DoxyCodeLine{103 \textcolor{keyword}{public}:}
+\DoxyCodeLine{113     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_avaliacao_a305204d8f423cc9f84d2cfbe48270eff}{setCodigo}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_codigo}{Codigo}} \&codigo);}
+\DoxyCodeLine{119     \mbox{\hyperlink{class_codigo}{Codigo}} \mbox{\hyperlink{class_avaliacao_a0df9a81c3f396e6a0a076fff5ed089d7}{getCodigo}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{129     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_avaliacao_a04171aae087a6ef045dabaff834572df}{setNota}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_nota}{Nota}} \&nota);}
+\DoxyCodeLine{135     \mbox{\hyperlink{class_nota}{Nota}} \mbox{\hyperlink{class_avaliacao_a73249b0a7330dfadc88c287fd71d7693}{getNota}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{145     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_avaliacao_a827d7be35e1b5473c753156c06833a58}{setDescricao}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_descricao}{Descricao}} \&descricao);}
+\DoxyCodeLine{151     \mbox{\hyperlink{class_descricao}{Descricao}} \mbox{\hyperlink{class_avaliacao_a3f6306dacf81489e86e171ad0ce03d99}{getDescricao}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{152 }
+\DoxyCodeLine{153 \};}
+\DoxyCodeLine{154 }
+\DoxyCodeLine{155 \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_avaliacao_a305204d8f423cc9f84d2cfbe48270eff}{Avaliacao::setCodigo}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_codigo}{Codigo}} \&codigo)\{}
+\DoxyCodeLine{156     \textcolor{keyword}{this} -\/> codigo = codigo;}
+\DoxyCodeLine{157 \}}
+\DoxyCodeLine{158 \textcolor{keyword}{inline} \mbox{\hyperlink{class_codigo}{Codigo}} \mbox{\hyperlink{class_avaliacao_a0df9a81c3f396e6a0a076fff5ed089d7}{Avaliacao::getCodigo}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{159     \textcolor{keywordflow}{return} codigo;}
+\DoxyCodeLine{160 \}}
+\DoxyCodeLine{161 }
+\DoxyCodeLine{162 \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_avaliacao_a04171aae087a6ef045dabaff834572df}{Avaliacao::setNota}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_nota}{Nota}}\& nota)\{}
+\DoxyCodeLine{163     \textcolor{keyword}{this} -\/>nota =nota;}
+\DoxyCodeLine{164 \}}
+\DoxyCodeLine{165 }
+\DoxyCodeLine{166 \textcolor{keyword}{inline} \mbox{\hyperlink{class_nota}{Nota}} \mbox{\hyperlink{class_avaliacao_a73249b0a7330dfadc88c287fd71d7693}{Avaliacao::getNota}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{167     \textcolor{keywordflow}{return} nota;}
+\DoxyCodeLine{168 \}}
+\DoxyCodeLine{169 }
+\DoxyCodeLine{170 }
+\DoxyCodeLine{171 \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_avaliacao_a827d7be35e1b5473c753156c06833a58}{Avaliacao::setDescricao}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_descricao}{Descricao}} \&descricao)\{}
+\DoxyCodeLine{172     \textcolor{keyword}{this} -\/> descricao = descricao;}
+\DoxyCodeLine{173 \}}
+\DoxyCodeLine{174 \textcolor{keyword}{inline} \mbox{\hyperlink{class_descricao}{Descricao}} \mbox{\hyperlink{class_avaliacao_a3f6306dacf81489e86e171ad0ce03d99}{Avaliacao::getDescricao}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{175     \textcolor{keywordflow}{return} descricao;}
+\DoxyCodeLine{176 \}}
+\DoxyCodeLine{177 }
+\DoxyCodeLine{178 }
+\DoxyCodeLine{182 \textcolor{comment}{// Classe criada por Guilherme Goncalves Soares 202042865}}
+\DoxyCodeLine{183 \textcolor{keyword}{class }\mbox{\hyperlink{class_excursao}{Excursao}}\{}
+\DoxyCodeLine{184 \textcolor{keyword}{private}:}
+\DoxyCodeLine{185     \mbox{\hyperlink{class_titulo}{Titulo}} titulo;}
+\DoxyCodeLine{186     \mbox{\hyperlink{class_nota}{Nota}} nota;}
+\DoxyCodeLine{187     \mbox{\hyperlink{class_cidade}{Cidade}} cidade;}
+\DoxyCodeLine{188     \mbox{\hyperlink{class_duracao}{Duracao}} duracao;}
+\DoxyCodeLine{189     \mbox{\hyperlink{class_descricao}{Descricao}} descricao;}
+\DoxyCodeLine{190     \mbox{\hyperlink{class_endereco}{Endereco}} endereco;   }
+\DoxyCodeLine{191     \mbox{\hyperlink{class_codigo}{Codigo}} codigo;}
+\DoxyCodeLine{192 \textcolor{keyword}{public}:}
+\DoxyCodeLine{202     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_excursao_a8ce25e44f4ed0fb59515786bfb5718b5}{setTitulo}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_titulo}{Titulo}} \&titulo);}
+\DoxyCodeLine{208     \mbox{\hyperlink{class_titulo}{Titulo}} \mbox{\hyperlink{class_excursao_a1738a80ce7f1aa4583289995a024ed15}{getTitulo}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{218     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_excursao_a721d236eebe6438a973ed3c43061ca4a}{setNota}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_nota}{Nota}} \&nota);}
+\DoxyCodeLine{224     \mbox{\hyperlink{class_nota}{Nota}} \mbox{\hyperlink{class_excursao_a27f086ea01433f0e86097b3ee5a6a0ec}{getNota}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{234     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_excursao_ac33430c5c74cbc928bc55ee566b10146}{setCidade}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_cidade}{Cidade}} \&cidade);}
+\DoxyCodeLine{240     \mbox{\hyperlink{class_cidade}{Cidade}} \mbox{\hyperlink{class_excursao_a4fa210b6bbd2a3a587c5a428b660b64a}{getCidade}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{250     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_excursao_ae9ade1ffdc638bb66814709886c8bbf9}{setDuracao}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_duracao}{Duracao}} \&duracao);}
+\DoxyCodeLine{256     \mbox{\hyperlink{class_duracao}{Duracao}} \mbox{\hyperlink{class_excursao_aa570f535ff7f0bb8c1215eaabd0f2ac7}{getDuracao}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{266     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_excursao_a594a39dbb902ee00a639c700238591d7}{setDescricao}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_descricao}{Descricao}} \&descricao);}
+\DoxyCodeLine{272     \mbox{\hyperlink{class_descricao}{Descricao}} \mbox{\hyperlink{class_excursao_a37bd96e96513d085c5e21c28b1116acf}{getDescricao}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{282     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_excursao_ab67c8d741695159da5f6bc1d2391e0c8}{setEndereco}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_endereco}{Endereco}} \&endereco);}
+\DoxyCodeLine{288     \mbox{\hyperlink{class_endereco}{Endereco}} \mbox{\hyperlink{class_excursao_a0e77aa38c997c8a0727d1b8f18461c8f}{getEndereco}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{298     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_excursao_aa504b928fa27683eda5a3c4bb4b13d3d}{setCodigo}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_codigo}{Codigo}} \&codigo);}
+\DoxyCodeLine{304     \mbox{\hyperlink{class_codigo}{Codigo}} \mbox{\hyperlink{class_excursao_a6dff85123ae09e5df1f5482fe1daa851}{getCodigo}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{305 \};}
+\DoxyCodeLine{306 }
+\DoxyCodeLine{307 \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_excursao_a8ce25e44f4ed0fb59515786bfb5718b5}{Excursao::setTitulo}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_titulo}{Titulo}} \&titulo)\{}
+\DoxyCodeLine{308     \textcolor{keyword}{this} -\/> titulo = titulo;}
+\DoxyCodeLine{309 \}}
+\DoxyCodeLine{310 \textcolor{keyword}{inline} \mbox{\hyperlink{class_titulo}{Titulo}} \mbox{\hyperlink{class_excursao_a1738a80ce7f1aa4583289995a024ed15}{Excursao::getTitulo}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{311     \textcolor{keywordflow}{return} titulo;}
+\DoxyCodeLine{312 \}}
+\DoxyCodeLine{313 }
+\DoxyCodeLine{314 }
+\DoxyCodeLine{315 }
+\DoxyCodeLine{316 \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_excursao_ac33430c5c74cbc928bc55ee566b10146}{Excursao::setCidade}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_cidade}{Cidade}} \&cidade)\{}
+\DoxyCodeLine{317     \textcolor{keyword}{this} -\/> cidade = cidade;}
+\DoxyCodeLine{318 \}}
+\DoxyCodeLine{319 \textcolor{keyword}{inline} \mbox{\hyperlink{class_cidade}{Cidade}} \mbox{\hyperlink{class_excursao_a4fa210b6bbd2a3a587c5a428b660b64a}{Excursao::getCidade}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{320     \textcolor{keywordflow}{return} cidade;}
+\DoxyCodeLine{321 \}}
+\DoxyCodeLine{322 }
+\DoxyCodeLine{323 }
+\DoxyCodeLine{324 \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_excursao_ae9ade1ffdc638bb66814709886c8bbf9}{Excursao::setDuracao}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_duracao}{Duracao}} \&duracao)\{}
+\DoxyCodeLine{325     \textcolor{keyword}{this} -\/> duracao = duracao;}
+\DoxyCodeLine{326 \}}
+\DoxyCodeLine{327 \textcolor{keyword}{inline} \mbox{\hyperlink{class_duracao}{Duracao}} \mbox{\hyperlink{class_excursao_aa570f535ff7f0bb8c1215eaabd0f2ac7}{Excursao::getDuracao}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{328     \textcolor{keywordflow}{return} duracao;}
+\DoxyCodeLine{329 \}}
+\DoxyCodeLine{330 }
+\DoxyCodeLine{331 }
+\DoxyCodeLine{332 \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_excursao_ab67c8d741695159da5f6bc1d2391e0c8}{Excursao::setEndereco}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_endereco}{Endereco}} \&endereco)\{}
+\DoxyCodeLine{333     \textcolor{keyword}{this} -\/> endereco = endereco;}
+\DoxyCodeLine{334 \}}
+\DoxyCodeLine{335 \textcolor{keyword}{inline} \mbox{\hyperlink{class_endereco}{Endereco}} \mbox{\hyperlink{class_excursao_a0e77aa38c997c8a0727d1b8f18461c8f}{Excursao::getEndereco}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{336     \textcolor{keywordflow}{return} endereco;}
+\DoxyCodeLine{337 \}}
+\DoxyCodeLine{338 }
+\DoxyCodeLine{339 }
+\DoxyCodeLine{340 \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_excursao_a594a39dbb902ee00a639c700238591d7}{Excursao::setDescricao}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_descricao}{Descricao}} \&descricao)\{}
+\DoxyCodeLine{341     \textcolor{keyword}{this} -\/> descricao = descricao;}
+\DoxyCodeLine{342 \}}
+\DoxyCodeLine{343 \textcolor{keyword}{inline} \mbox{\hyperlink{class_descricao}{Descricao}} \mbox{\hyperlink{class_excursao_a37bd96e96513d085c5e21c28b1116acf}{Excursao::getDescricao}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{344     \textcolor{keywordflow}{return} descricao;}
+\DoxyCodeLine{345 \}}
+\DoxyCodeLine{346 }
+\DoxyCodeLine{347 }
+\DoxyCodeLine{348 \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_excursao_aa504b928fa27683eda5a3c4bb4b13d3d}{Excursao::setCodigo}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_codigo}{Codigo}} \&codigo)\{}
+\DoxyCodeLine{349     \textcolor{keyword}{this} -\/> codigo = codigo;}
+\DoxyCodeLine{350 \}}
+\DoxyCodeLine{351 \textcolor{keyword}{inline} \mbox{\hyperlink{class_codigo}{Codigo}} \mbox{\hyperlink{class_excursao_a6dff85123ae09e5df1f5482fe1daa851}{Excursao::getCodigo}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{352     \textcolor{keywordflow}{return} codigo;}
+\DoxyCodeLine{353 \}}
+\DoxyCodeLine{354 }
+\DoxyCodeLine{355 \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_excursao_a721d236eebe6438a973ed3c43061ca4a}{Excursao::setNota}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_nota}{Nota}} \&nota)\{}
+\DoxyCodeLine{356     \textcolor{keyword}{this} -\/> nota = nota;}
+\DoxyCodeLine{357 \}}
+\DoxyCodeLine{358 \textcolor{keyword}{inline} \mbox{\hyperlink{class_nota}{Nota}} \mbox{\hyperlink{class_excursao_a27f086ea01433f0e86097b3ee5a6a0ec}{Excursao::getNota}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{359     \textcolor{keywordflow}{return} nota;}
+\DoxyCodeLine{360 \}}
+\DoxyCodeLine{361 }
+\DoxyCodeLine{365 \textcolor{comment}{// Classe criada por Guilherme Goncalves Soares 202042865}}
+\DoxyCodeLine{366 \textcolor{keyword}{class }\mbox{\hyperlink{class_sessao}{Sessao}}\{}
+\DoxyCodeLine{367 \textcolor{keyword}{private}:}
+\DoxyCodeLine{368     \textcolor{keyword}{static} \textcolor{keywordtype}{string} idiomas[11];}
+\DoxyCodeLine{369     \mbox{\hyperlink{class_codigo}{Codigo}} codigo;}
+\DoxyCodeLine{370     \mbox{\hyperlink{class_data}{Data}} data;}
+\DoxyCodeLine{371     \mbox{\hyperlink{class_horario}{Horario}} horario;}
+\DoxyCodeLine{372     \mbox{\hyperlink{class_idioma}{Idioma}} idioma;}
+\DoxyCodeLine{373  }
+\DoxyCodeLine{374 \textcolor{keyword}{public}:}
+\DoxyCodeLine{384     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_sessao_a3a47a38e4fe8210afd9e5d39d8430c6f}{setCodigo}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_codigo}{Codigo}} \&codigo);}
+\DoxyCodeLine{390     \mbox{\hyperlink{class_codigo}{Codigo}} \mbox{\hyperlink{class_sessao_a7cae60c71904d90cdc108c50eb0d2640}{getCodigo}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{400     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_sessao_acceabc07457759c63c460193dd3f933f}{setData}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_data}{Data}} \&data);}
+\DoxyCodeLine{406     \mbox{\hyperlink{class_data}{Data}} \mbox{\hyperlink{class_sessao_a4c5610b15bd62dffa05f7915140b9fad}{getData}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{416     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_sessao_aedd206f50fc1728cbdd2edfa701ebceb}{setHorario}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_horario}{Horario}} \&horario);}
+\DoxyCodeLine{422     \mbox{\hyperlink{class_horario}{Horario}} \mbox{\hyperlink{class_sessao_a5f01a11ebe0fa17893bc8a7f63b4749f}{getHorario}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{432     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_sessao_ac008551a74ce4d308d6de97fecec4458}{setIdioma}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_idioma}{Idioma}} \&idioma);}
+\DoxyCodeLine{438     \mbox{\hyperlink{class_idioma}{Idioma}} \mbox{\hyperlink{class_sessao_a5dc52288396c6ea637f765934b6f94ab}{getIdioma}}() \textcolor{keyword}{const}; }
+\DoxyCodeLine{439 }
+\DoxyCodeLine{440 \};}
+\DoxyCodeLine{441 }
+\DoxyCodeLine{442 \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_sessao_a3a47a38e4fe8210afd9e5d39d8430c6f}{Sessao::setCodigo}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_codigo}{Codigo}} \&codigo)\{}
+\DoxyCodeLine{443     \textcolor{keyword}{this} -\/> codigo = codigo;}
+\DoxyCodeLine{444 \}}
+\DoxyCodeLine{445 \textcolor{keyword}{inline} \mbox{\hyperlink{class_codigo}{Codigo}} \mbox{\hyperlink{class_sessao_a7cae60c71904d90cdc108c50eb0d2640}{Sessao::getCodigo}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{446     \textcolor{keywordflow}{return} codigo;}
+\DoxyCodeLine{447 \}}
+\DoxyCodeLine{448 }
+\DoxyCodeLine{449 \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_sessao_acceabc07457759c63c460193dd3f933f}{Sessao::setData}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_data}{Data}} \&data)\{}
+\DoxyCodeLine{450     \textcolor{keyword}{this} -\/> data = data;}
+\DoxyCodeLine{451 \}}
+\DoxyCodeLine{452 \textcolor{keyword}{inline} \mbox{\hyperlink{class_data}{Data}} \mbox{\hyperlink{class_sessao_a4c5610b15bd62dffa05f7915140b9fad}{Sessao::getData}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{453     \textcolor{keywordflow}{return} data;}
+\DoxyCodeLine{454 \}}
+\DoxyCodeLine{455 }
+\DoxyCodeLine{456 \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_sessao_aedd206f50fc1728cbdd2edfa701ebceb}{Sessao::setHorario}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_horario}{Horario}} \&horario)\{}
+\DoxyCodeLine{457     \textcolor{keyword}{this} -\/> horario = horario;}
+\DoxyCodeLine{458 \}}
+\DoxyCodeLine{459 \textcolor{keyword}{inline} \mbox{\hyperlink{class_horario}{Horario}} \mbox{\hyperlink{class_sessao_a5f01a11ebe0fa17893bc8a7f63b4749f}{Sessao::getHorario}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{460     \textcolor{keywordflow}{return} horario;}
+\DoxyCodeLine{461 \}}
+\DoxyCodeLine{462 }
+\DoxyCodeLine{463 \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_sessao_ac008551a74ce4d308d6de97fecec4458}{Sessao::setIdioma}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_idioma}{Idioma}} \&idioma)\{}
+\DoxyCodeLine{464     \textcolor{keyword}{this} -\/> idioma = idioma;}
+\DoxyCodeLine{465 \}}
+\DoxyCodeLine{466 \textcolor{keyword}{inline} \mbox{\hyperlink{class_idioma}{Idioma}} \mbox{\hyperlink{class_sessao_a5dc52288396c6ea637f765934b6f94ab}{Sessao::getIdioma}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{467     \textcolor{keywordflow}{return} idioma;}
+\DoxyCodeLine{468 \}}
+\DoxyCodeLine{469 }
+\DoxyCodeLine{470 }
+\DoxyCodeLine{471 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

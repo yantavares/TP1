@@ -1,0 +1,70 @@
+\hypertarget{class_senha}{}\doxysection{Senha Class Reference}
+\label{class_senha}\index{Senha@{Senha}}
+
+
+Padrao para representacao de senha.  
+
+
+
+
+{\ttfamily \#include $<$dominios.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_senha_acd8421d42899bd42f33643549384cafe}{set\+Valor}} (string valor)
+\item 
+string \mbox{\hyperlink{class_senha_ae0b4d9dfac80da4dc9c4965a9648e6b5}{get\+Valor}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Padrao para representacao de senha. 
+
+Regras de formato\+:
+
+
+\begin{DoxyItemize}
+\item Formato XXXXXX onde X eh letra, ponto ou espaço em branco;
+\item Nao existe caracter repetido;
+\item Eh necessario pelo menos uma letra minuscula, uma letra maiuscula e um digito. 
+\end{DoxyItemize}
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_senha_ae0b4d9dfac80da4dc9c4965a9648e6b5}\label{class_senha_ae0b4d9dfac80da4dc9c4965a9648e6b5}} 
+\index{Senha@{Senha}!getValor@{getValor}}
+\index{getValor@{getValor}!Senha@{Senha}}
+\doxysubsubsection{\texorpdfstring{getValor()}{getValor()}}
+{\footnotesize\ttfamily string Senha\+::get\+Valor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Retorna a senha armazenada
+
+\begin{DoxyReturn}{Returns}
+senha 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_senha_acd8421d42899bd42f33643549384cafe}\label{class_senha_acd8421d42899bd42f33643549384cafe}} 
+\index{Senha@{Senha}!setValor@{setValor}}
+\index{setValor@{setValor}!Senha@{Senha}}
+\doxysubsubsection{\texorpdfstring{setValor()}{setValor()}}
+{\footnotesize\ttfamily void Senha\+::set\+Valor (\begin{DoxyParamCaption}\item[{string}]{valor }\end{DoxyParamCaption})}
+
+Armazena a senha informada caso seja valida
+
+Lança exceção caso a senha nao esteja de acordo com as regras de formato
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor} & senha\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dominios.\+hpp\item 
+dominios.\+cpp\end{DoxyCompactItemize}

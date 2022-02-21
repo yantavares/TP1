@@ -1,0 +1,68 @@
+\hypertarget{class_descricao}{}\doxysection{Descricao Class Reference}
+\label{class_descricao}\index{Descricao@{Descricao}}
+
+
+Padrao para representacao de descricao.  
+
+
+
+
+{\ttfamily \#include $<$dominios.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_descricao_a0845a285f9856f2cf781cd1d599a8047}{set\+Valor}} (string valor)
+\item 
+string \mbox{\hyperlink{class_descricao_a48e45f40d40a338ddc0f34f61f648be2}{get\+Valor}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Padrao para representacao de descricao. 
+
+Regras de formato\+:
+
+
+\begin{DoxyItemize}
+\item 0 a 30 caracteres sem espaços ou pontos em sequencia. 
+\end{DoxyItemize}
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_descricao_a48e45f40d40a338ddc0f34f61f648be2}\label{class_descricao_a48e45f40d40a338ddc0f34f61f648be2}} 
+\index{Descricao@{Descricao}!getValor@{getValor}}
+\index{getValor@{getValor}!Descricao@{Descricao}}
+\doxysubsubsection{\texorpdfstring{getValor()}{getValor()}}
+{\footnotesize\ttfamily string Descricao\+::get\+Valor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Retorna a descricao armazenada
+
+\begin{DoxyReturn}{Returns}
+descricao 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_descricao_a0845a285f9856f2cf781cd1d599a8047}\label{class_descricao_a0845a285f9856f2cf781cd1d599a8047}} 
+\index{Descricao@{Descricao}!setValor@{setValor}}
+\index{setValor@{setValor}!Descricao@{Descricao}}
+\doxysubsubsection{\texorpdfstring{setValor()}{setValor()}}
+{\footnotesize\ttfamily void Descricao\+::set\+Valor (\begin{DoxyParamCaption}\item[{string}]{valor }\end{DoxyParamCaption})}
+
+Armazena a descricao informada caso seja valida
+
+Lança exceção caso a descricao nao esteja de acordo com as regras de formato
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor} & descricao\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dominios.\+hpp\item 
+dominios.\+cpp\end{DoxyCompactItemize}

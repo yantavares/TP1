@@ -1,0 +1,68 @@
+\hypertarget{class_titulo}{}\doxysection{Titulo Class Reference}
+\label{class_titulo}\index{Titulo@{Titulo}}
+
+
+Padrao para representacao de titulo.  
+
+
+
+
+{\ttfamily \#include $<$dominios.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_titulo_a04b498d233424148b881152898cc9d2f}{set\+Valor}} (string valor)
+\item 
+string \mbox{\hyperlink{class_titulo_af3422b93c0a48089861f3ee4d705fb5f}{get\+Valor}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Padrao para representacao de titulo. 
+
+Regras de formato\+:
+
+
+\begin{DoxyItemize}
+\item 5 a 20 caracteres sem espaços ou pontos em sequencia. 
+\end{DoxyItemize}
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_titulo_af3422b93c0a48089861f3ee4d705fb5f}\label{class_titulo_af3422b93c0a48089861f3ee4d705fb5f}} 
+\index{Titulo@{Titulo}!getValor@{getValor}}
+\index{getValor@{getValor}!Titulo@{Titulo}}
+\doxysubsubsection{\texorpdfstring{getValor()}{getValor()}}
+{\footnotesize\ttfamily string Titulo\+::get\+Valor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Retorna o titulo armazenado.
+
+\begin{DoxyReturn}{Returns}
+titulo 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_titulo_a04b498d233424148b881152898cc9d2f}\label{class_titulo_a04b498d233424148b881152898cc9d2f}} 
+\index{Titulo@{Titulo}!setValor@{setValor}}
+\index{setValor@{setValor}!Titulo@{Titulo}}
+\doxysubsubsection{\texorpdfstring{setValor()}{setValor()}}
+{\footnotesize\ttfamily void Titulo\+::set\+Valor (\begin{DoxyParamCaption}\item[{string}]{valor }\end{DoxyParamCaption})}
+
+Armazena o titulo informado caso seja valido.
+
+Lança exceção caso o titulo nao esteja de acordo com as regras de formato
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor} & titulo\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dominios.\+hpp\item 
+dominios.\+cpp\end{DoxyCompactItemize}

@@ -8,148 +8,152 @@
 
 using namespace std;
 
-// Teste de unidade da classe Usuario
+/// @brief Teste de unidade da classe Usuario
 // Classe feita por Mateus Gomes de Araujo 202014440
 class TUUsuario {
 private:
 
-    // Valor valido de nome para o teste da entidade
+    /// Valor valido de nome para o teste da entidade
     const string VALOR_VALIDO_NOME  = "Mateus Araujo";
-    // Valor valido de email para o teste da entidade
+    /// Valor valido de email para o teste da entidade
     const string VALOR_VALIDO_EMAIL  = "mateus@gmail.com";
-    // Valor valido de senha para o teste da entidade
+    /// Valor valido de senha para o teste da entidade
     const string VALOR_VALIDO_SENHA  = "AbC123";
 
-    // Referencia para o objeto a ser testado
+    /// Referencia para o objeto a ser testado
     Usuario *usuario;
 
-    // Estado do teste
+    /// Estado do teste
     int estado;
 
-    // Metodo para criar a entidade a ser testada
+    /// Metodo para criar a entidade a ser testada
     void setUp();
 
-    // Metodo para deletar a entidade criada
+    /// Metodo para deletar a entidade criada
     void tearDown();
 
-    // Metodo que efetua teste dos casos validos
+    /// Metodo que efetua teste dos casos validos
     void testarCenarioSucesso();
 public:
 
-    // Constante que mostra o resultado de sucesso do teste
+    /// Constante que mostra o resultado de sucesso do teste
     const static int SUCESSO =  0;
-    // Constante que mostra o resultado de falha do teste
+    /// Constante que mostra o resultado de falha do teste
     const static int FALHA   = -1;
 
-    // Metodo que executa o teste
+    /// Metodo que executa o teste
     int run();
 };
-// Teste de unidade da classe Avaliacao
+/// @brief Teste de unidade da classe Avaliacao
 // Classe feita por Mateus Gomes de Araujo 202014440
 class TUAvaliacao {
 private:
 
-    // Valor valido de codigo para o teste da entidade
+    /// Valor valido de codigo para o teste da entidade
     const string VALOR_VALIDO_CODIGO  = "6245161";
-    // Valor valido de nota para o teste da entidade
+    /// Valor valido de nota para o teste da entidade
     static const int VALOR_VALIDO_NOTA  = 1;
-    // Valor valido de descricao para o teste da entidade
+    /// Valor valido de descricao para o teste da entidade
     const string VALOR_VALIDO_DESCRICAO  = "Descricao Exemplo.";
 
-    // Referencia para o objeto a ser testado
+    /// Referencia para o objeto a ser testado
     Avaliacao *avaliacao;
 
-    // Estado do teste
+    /// Estado do teste
     int estado;
 
-    // Metodo para criar a entidade a ser testada
+    /// Metodo para criar a entidade a ser testada
     void setUp();
-    // Metodo para deletar a entidade criada
+    /// Metodo para deletar a entidade criada
     void tearDown();
-    // Metodo que efetua teste dos casos validos
+    /// Metodo que efetua teste dos casos validos
     void testarCenarioSucesso();
 public:
 
-    // Constante que mostra o resultado de sucesso do teste
+    /// Constante que mostra o resultado de sucesso do teste
     const static int SUCESSO =  0;
-    // Constante que mostra o resultado de falha do teste
+    /// Constante que mostra o resultado de falha do teste
     const static int FALHA   = -1;
 
-    // Metodo que executa o teste
+    /// Metodo que executa o teste
     int run();
 };
 
+/// @brief Teste de unidade da classe Excursao
+// Classe feita por Mateus Gomes de Araujo 202014440
 class TUExcursao {
 private:
-    // Valor valido de titulo para o teste da entidade
+    /// Valor valido de titulo para o teste da entidade
     const string VALOR_VALIDO_TITULO  = "Mateus Araujo";
-    // Valor valido de nota para o teste da entidade
+    /// Valor valido de nota para o teste da entidade
     static const int VALOR_VALIDO_NOTA = 3;
-    // Valor valido de cidade para o teste da entidade
+    /// Valor valido de cidade para o teste da entidade
     const string VALOR_VALIDO_CIDADE  = "Bangkok";
-    // Valor valido de duracao para o teste da entidade
+    /// Valor valido de duracao para o teste da entidade
     static const int VALOR_VALIDO_DURACAO  = 30;
-    // Valor valido de descricao para o teste da entidade
+    /// Valor valido de descricao para o teste da entidade
     const string VALOR_VALIDO_DESCRICAO  = "Descricao generica";
-    // Valor valido de endereco para o teste da entidade
+    /// Valor valido de endereco para o teste da entidade
     const string VALOR_VALIDO_ENDERECO  = "Quadra QC1 Cj A BL 6";
-    // Valor valido de codigo para o teste da entidade
+    /// Valor valido de codigo para o teste da entidade
     const string VALOR_VALIDO_CODIGO  = "9105131";
 
-    // Referencia para o objeto a ser testado
+    /// Referencia para o objeto a ser testado
     Excursao *excursao;
 
-    // Estado do teste
+    /// Estado do teste
     int estado;
 
-    // Metodo para criar a entidade a ser testada
+    /// Metodo para criar a entidade a ser testada
     void setUp();
-    // Metodo para deletar a entidade criada
+    /// Metodo para deletar a entidade criada
     void tearDown();
-    // Metodo que efetua teste dos casos validos
+    /// Metodo que efetua teste dos casos validos
     void testarCenarioSucesso();
 public:
 
-    // Constante que mostra o resultado de sucesso do teste
+    /// Constante que mostra o resultado de sucesso do teste
     const static int SUCESSO =  0;
-    // Constante que mostra o resultado de falha do teste
+    /// Constante que mostra o resultado de falha do teste
     const static int FALHA   = -1;
 
-    // Metodo que executa o teste
+    /// Metodo que executa o teste
     int run();
 };
 
+/// @brief Teste de unidade da classe Sessao
+// Classe feita por Mateus Gomes de Araujo 202014440
 class TUSessao {
 private:
-    // Valor valido de codigo para o teste da entidade
+    /// Valor valido de codigo para o teste da entidade
     const string VALOR_VALIDO_CODIGO  = "8105231";
-    // Valor valido de data para o teste da entidade
+    /// Valor valido de data para o teste da entidade
     const string VALOR_VALIDO_DATA  = "12-Nov-2001";
-    // Valor valido de horario para o teste da entidade
+    /// Valor valido de horario para o teste da entidade
     const string VALOR_VALIDO_HORARIO  = "22:11";
-    // Valor valido de idoma para o teste da entidade
+    /// Valor valido de idoma para o teste da entidade
     const string VALOR_VALIDO_IDIOMA  = "Mandarim";
 
-    // Referencia para o objeto a ser testado
+    /// Referencia para o objeto a ser testado
     Sessao *sessao;
 
-    // Estado do teste
+    /// Estado do teste
     int estado;
 
-    // Metodo para criar a entidade a ser testada
+    /// Metodo para criar a entidade a ser testada
     void setUp();
-    // Metodo para deletar a entidade criada
+    /// Metodo para deletar a entidade criada
     void tearDown();
-    // Metodo que efetua teste dos casos validos
+    /// Metodo que efetua teste dos casos validos
     void testarCenarioSucesso();
 public:
 
-    // Constante que mostra o resultado de sucesso do teste
+    /// Constante que mostra o resultado de sucesso do teste
     const static int SUCESSO =  0;
-    // Constante que mostra o resultado de falha do teste
+    /// Constante que mostra o resultado de falha do teste
     const static int FALHA   = -1;
 
-    // Metodo que executa o teste
+    /// Metodo que executa o teste
     int run();
 };
 

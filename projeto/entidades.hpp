@@ -9,7 +9,7 @@
 
 using namespace std;
 
-/// @brief Padrao para representacao de Usuario:
+/// @brief Padrao para representacao de usuario:
 ///
 /// Usuario contem entidades Nome, Email e Senha.
 // Classe criada por Guilherme Goncalves Soares 202042865
@@ -91,7 +91,7 @@ inline Senha Usuario::getSenha() const {
 }
 
 
-/// @brief Padrao para representacao de Avaliacao
+/// @brief Padrao para representacao de avaliacao
 /// 
 /// Avaliacao contem codigo, nota e descricao
 // Classe criada por Guilherme Goncalves Soares 202042865
@@ -176,7 +176,7 @@ inline Descricao Avaliacao::getDescricao() const {
 }
 
 
-/// @brief Padrao para representacao de Excursao
+/// @brief Padrao para representacao de excursao
 ///
 /// Excursao contem titulo, nota, cidade, duracao, descricao, endereco e codigo
 // Classe criada por Guilherme Goncalves Soares 202042865
@@ -359,7 +359,7 @@ inline Nota Excursao::getNota() const {
     return nota;
 }
 
-/// @brief Padrao para representacao de Sessao
+/// @brief Padrao para representacao de sessao
 ///
 /// A Sessao contem codigo, data, horario e idioma
 // Classe criada por Guilherme Goncalves Soares 202042865
