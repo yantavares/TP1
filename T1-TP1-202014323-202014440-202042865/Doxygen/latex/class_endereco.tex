@@ -1,0 +1,68 @@
+\hypertarget{class_endereco}{}\doxysection{Endereco Class Reference}
+\label{class_endereco}\index{Endereco@{Endereco}}
+
+
+Padrao para representacao de endereco.  
+
+
+
+
+{\ttfamily \#include $<$dominios.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_endereco_a988766e3ff40742af93b1def0190a1da}{set\+Valor}} (string valor)
+\item 
+string \mbox{\hyperlink{class_endereco_ae16775fa39a1a2cc9d2e54a7a5086895}{get\+Valor}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Padrao para representacao de endereco. 
+
+Regras de formato\+:
+
+
+\begin{DoxyItemize}
+\item 0 a 20 caracteres seme spaços ou pontos em sequencia. 
+\end{DoxyItemize}
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_endereco_ae16775fa39a1a2cc9d2e54a7a5086895}\label{class_endereco_ae16775fa39a1a2cc9d2e54a7a5086895}} 
+\index{Endereco@{Endereco}!getValor@{getValor}}
+\index{getValor@{getValor}!Endereco@{Endereco}}
+\doxysubsubsection{\texorpdfstring{getValor()}{getValor()}}
+{\footnotesize\ttfamily string Endereco\+::get\+Valor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Retorna o endereco armazenado.
+
+\begin{DoxyReturn}{Returns}
+endereco 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_endereco_a988766e3ff40742af93b1def0190a1da}\label{class_endereco_a988766e3ff40742af93b1def0190a1da}} 
+\index{Endereco@{Endereco}!setValor@{setValor}}
+\index{setValor@{setValor}!Endereco@{Endereco}}
+\doxysubsubsection{\texorpdfstring{setValor()}{setValor()}}
+{\footnotesize\ttfamily void Endereco\+::set\+Valor (\begin{DoxyParamCaption}\item[{string}]{valor }\end{DoxyParamCaption})}
+
+Armazena o endereco informado caso seja valido.
+
+Lança exceção caso o endereco nao esteja de acordo com as regras de formato
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor} & endereco\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dominios.\+hpp\item 
+dominios.\+cpp\end{DoxyCompactItemize}

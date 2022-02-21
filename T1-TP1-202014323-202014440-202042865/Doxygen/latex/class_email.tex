@@ -1,0 +1,69 @@
+\hypertarget{class_email}{}\doxysection{Email Class Reference}
+\label{class_email}\index{Email@{Email}}
+
+
+Padrao para representacao de email.  
+
+
+
+
+{\ttfamily \#include $<$dominios.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_email_a5148a6dcb03d12577ea56ccfd344d1c2}{set\+Valor}} (string valor)
+\item 
+string \mbox{\hyperlink{class_email_a573b7a1f21085bbb13cf6ec4dd802ecc}{get\+Valor}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Padrao para representacao de email. 
+
+Regras de formato\+:
+
+
+\begin{DoxyItemize}
+\item Formato \textquotesingle{}string@dominio\textquotesingle{}, onde string possui ate 64 caracteres e dominio ate 253 caracteres.
+\item Nao ha ponto como primeiro ou ultimo caracter ou em sequencia. 
+\end{DoxyItemize}
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_email_a573b7a1f21085bbb13cf6ec4dd802ecc}\label{class_email_a573b7a1f21085bbb13cf6ec4dd802ecc}} 
+\index{Email@{Email}!getValor@{getValor}}
+\index{getValor@{getValor}!Email@{Email}}
+\doxysubsubsection{\texorpdfstring{getValor()}{getValor()}}
+{\footnotesize\ttfamily string Email\+::get\+Valor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Retorna o email armazenado
+
+\begin{DoxyReturn}{Returns}
+email 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_email_a5148a6dcb03d12577ea56ccfd344d1c2}\label{class_email_a5148a6dcb03d12577ea56ccfd344d1c2}} 
+\index{Email@{Email}!setValor@{setValor}}
+\index{setValor@{setValor}!Email@{Email}}
+\doxysubsubsection{\texorpdfstring{setValor()}{setValor()}}
+{\footnotesize\ttfamily void Email\+::set\+Valor (\begin{DoxyParamCaption}\item[{string}]{valor }\end{DoxyParamCaption})}
+
+Armazena o email informado caso seja valido
+
+Lança exceção caso o email nao esteja de acordo com as regras de formato
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor} & email\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dominios.\+hpp\item 
+dominios.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,112 @@
+\hypertarget{testes_entidades_8hpp_source}{}\doxysection{testes\+Entidades.\+hpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef TESTESENTIDADES\_HPP\_INCLUDED}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define TESTESENTIDADES\_HPP\_INCLUDED}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}entidades.hpp"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <string.h>}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{12 \textcolor{comment}{// Classe feita por Mateus Gomes de Araujo 202014440}}
+\DoxyCodeLine{13 \textcolor{keyword}{class }\mbox{\hyperlink{class_t_u_usuario}{TUUsuario}} \{}
+\DoxyCodeLine{14 \textcolor{keyword}{private}:}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{17     \textcolor{keyword}{const} \textcolor{keywordtype}{string} VALOR\_VALIDO\_NOME  = \textcolor{stringliteral}{"{}Mateus Araujo"{}};}
+\DoxyCodeLine{19     \textcolor{keyword}{const} \textcolor{keywordtype}{string} VALOR\_VALIDO\_EMAIL  = \textcolor{stringliteral}{"{}mateus@gmail.com"{}};}
+\DoxyCodeLine{21     \textcolor{keyword}{const} \textcolor{keywordtype}{string} VALOR\_VALIDO\_SENHA  = \textcolor{stringliteral}{"{}AbC123"{}};}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{24     \mbox{\hyperlink{class_usuario}{Usuario}} *usuario;}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{27     \textcolor{keywordtype}{int} estado;}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{30     \textcolor{keywordtype}{void} setUp();}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{33     \textcolor{keywordtype}{void} tearDown();}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{36     \textcolor{keywordtype}{void} testarCenarioSucesso();}
+\DoxyCodeLine{37 \textcolor{keyword}{public}:}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{40     \textcolor{keyword}{const} \textcolor{keyword}{static} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_t_u_usuario_aa9302e7d6f13452c83f21224fd335e54}{SUCESSO}} =  0;}
+\DoxyCodeLine{42     \textcolor{keyword}{const} \textcolor{keyword}{static} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_t_u_usuario_af1a7217e0d002f0d0b524c901bb75c98}{FALHA}}   = -\/1;}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{45     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_t_u_usuario_af12e1b9020cfb11a1f659373a70268fa}{run}}();}
+\DoxyCodeLine{46 \};}
+\DoxyCodeLine{48 \textcolor{comment}{// Classe feita por Mateus Gomes de Araujo 202014440}}
+\DoxyCodeLine{49 \textcolor{keyword}{class }\mbox{\hyperlink{class_t_u_avaliacao}{TUAvaliacao}} \{}
+\DoxyCodeLine{50 \textcolor{keyword}{private}:}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{53     \textcolor{keyword}{const} \textcolor{keywordtype}{string} VALOR\_VALIDO\_CODIGO  = \textcolor{stringliteral}{"{}6245161"{}};}
+\DoxyCodeLine{55     \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{int} VALOR\_VALIDO\_NOTA  = 1;}
+\DoxyCodeLine{57     \textcolor{keyword}{const} \textcolor{keywordtype}{string} VALOR\_VALIDO\_DESCRICAO  = \textcolor{stringliteral}{"{}Descricao Exemplo."{}};}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{60     \mbox{\hyperlink{class_avaliacao}{Avaliacao}} *avaliacao;}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{63     \textcolor{keywordtype}{int} estado;}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{66     \textcolor{keywordtype}{void} setUp();}
+\DoxyCodeLine{68     \textcolor{keywordtype}{void} tearDown();}
+\DoxyCodeLine{70     \textcolor{keywordtype}{void} testarCenarioSucesso();}
+\DoxyCodeLine{71 \textcolor{keyword}{public}:}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{74     \textcolor{keyword}{const} \textcolor{keyword}{static} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_t_u_avaliacao_a697dce874d58847a37766795210fc360}{SUCESSO}} =  0;}
+\DoxyCodeLine{76     \textcolor{keyword}{const} \textcolor{keyword}{static} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_t_u_avaliacao_ae55d06cff56296d44ca12e76fd82ca1b}{FALHA}}   = -\/1;}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{79     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_t_u_avaliacao_aed2383c33ca301a41c3c364af6e5a4af}{run}}();}
+\DoxyCodeLine{80 \};}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{83 \textcolor{comment}{// Classe feita por Mateus Gomes de Araujo 202014440}}
+\DoxyCodeLine{84 \textcolor{keyword}{class }\mbox{\hyperlink{class_t_u_excursao}{TUExcursao}} \{}
+\DoxyCodeLine{85 \textcolor{keyword}{private}:}
+\DoxyCodeLine{87     \textcolor{keyword}{const} \textcolor{keywordtype}{string} VALOR\_VALIDO\_TITULO  = \textcolor{stringliteral}{"{}Mateus Araujo"{}};}
+\DoxyCodeLine{89     \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{int} VALOR\_VALIDO\_NOTA = 3;}
+\DoxyCodeLine{91     \textcolor{keyword}{const} \textcolor{keywordtype}{string} VALOR\_VALIDO\_CIDADE  = \textcolor{stringliteral}{"{}Bangkok"{}};}
+\DoxyCodeLine{93     \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{int} VALOR\_VALIDO\_DURACAO  = 30;}
+\DoxyCodeLine{95     \textcolor{keyword}{const} \textcolor{keywordtype}{string} VALOR\_VALIDO\_DESCRICAO  = \textcolor{stringliteral}{"{}Descricao generica"{}};}
+\DoxyCodeLine{97     \textcolor{keyword}{const} \textcolor{keywordtype}{string} VALOR\_VALIDO\_ENDERECO  = \textcolor{stringliteral}{"{}Quadra QC1 Cj A BL 6"{}};}
+\DoxyCodeLine{99     \textcolor{keyword}{const} \textcolor{keywordtype}{string} VALOR\_VALIDO\_CODIGO  = \textcolor{stringliteral}{"{}9105131"{}};}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{102     \mbox{\hyperlink{class_excursao}{Excursao}} *excursao;}
+\DoxyCodeLine{103 }
+\DoxyCodeLine{105     \textcolor{keywordtype}{int} estado;}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{108     \textcolor{keywordtype}{void} setUp();}
+\DoxyCodeLine{110     \textcolor{keywordtype}{void} tearDown();}
+\DoxyCodeLine{112     \textcolor{keywordtype}{void} testarCenarioSucesso();}
+\DoxyCodeLine{113 \textcolor{keyword}{public}:}
+\DoxyCodeLine{114 }
+\DoxyCodeLine{116     \textcolor{keyword}{const} \textcolor{keyword}{static} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_t_u_excursao_a8c4aa8dfe4f52dd83d960616a481801c}{SUCESSO}} =  0;}
+\DoxyCodeLine{118     \textcolor{keyword}{const} \textcolor{keyword}{static} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_t_u_excursao_a18b11c946aff53088f680639d538e47f}{FALHA}}   = -\/1;}
+\DoxyCodeLine{119 }
+\DoxyCodeLine{121     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_t_u_excursao_a0d1dc719e01baba2f4bfaf4a606552ba}{run}}();}
+\DoxyCodeLine{122 \};}
+\DoxyCodeLine{123 }
+\DoxyCodeLine{125 \textcolor{comment}{// Classe feita por Mateus Gomes de Araujo 202014440}}
+\DoxyCodeLine{126 \textcolor{keyword}{class }\mbox{\hyperlink{class_t_u_sessao}{TUSessao}} \{}
+\DoxyCodeLine{127 \textcolor{keyword}{private}:}
+\DoxyCodeLine{129     \textcolor{keyword}{const} \textcolor{keywordtype}{string} VALOR\_VALIDO\_CODIGO  = \textcolor{stringliteral}{"{}8105231"{}};}
+\DoxyCodeLine{131     \textcolor{keyword}{const} \textcolor{keywordtype}{string} VALOR\_VALIDO\_DATA  = \textcolor{stringliteral}{"{}12-\/Nov-\/2001"{}};}
+\DoxyCodeLine{133     \textcolor{keyword}{const} \textcolor{keywordtype}{string} VALOR\_VALIDO\_HORARIO  = \textcolor{stringliteral}{"{}22:11"{}};}
+\DoxyCodeLine{135     \textcolor{keyword}{const} \textcolor{keywordtype}{string} VALOR\_VALIDO\_IDIOMA  = \textcolor{stringliteral}{"{}Mandarim"{}};}
+\DoxyCodeLine{136 }
+\DoxyCodeLine{138     \mbox{\hyperlink{class_sessao}{Sessao}} *sessao;}
+\DoxyCodeLine{139 }
+\DoxyCodeLine{141     \textcolor{keywordtype}{int} estado;}
+\DoxyCodeLine{142 }
+\DoxyCodeLine{144     \textcolor{keywordtype}{void} setUp();}
+\DoxyCodeLine{146     \textcolor{keywordtype}{void} tearDown();}
+\DoxyCodeLine{148     \textcolor{keywordtype}{void} testarCenarioSucesso();}
+\DoxyCodeLine{149 \textcolor{keyword}{public}:}
+\DoxyCodeLine{150 }
+\DoxyCodeLine{152     \textcolor{keyword}{const} \textcolor{keyword}{static} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_t_u_sessao_a03506f1cbd2dc9cb5ec98e0b44b651bf}{SUCESSO}} =  0;}
+\DoxyCodeLine{154     \textcolor{keyword}{const} \textcolor{keyword}{static} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_t_u_sessao_ad873b713232b6caeddea909743531689}{FALHA}}   = -\/1;}
+\DoxyCodeLine{155 }
+\DoxyCodeLine{157     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_t_u_sessao_a8b7da304bdc9a78148ee32742b65ec31}{run}}();}
+\DoxyCodeLine{158 \};}
+\DoxyCodeLine{159 }
+\DoxyCodeLine{160 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

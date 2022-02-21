@@ -1,0 +1,26 @@
+\hypertarget{dominios_8cpp}{}\doxysection{dominios.\+cpp File Reference}
+\label{dominios_8cpp}\index{dominios.cpp@{dominios.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+{\ttfamily \#include $<$cctype$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include \char`\"{}dominios.\+hpp\char`\"{}}\newline
+Include dependency graph for dominios.\+cpp\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{dominios_8cpp_a9678b9d998e95c50d551bcefedfbe5d2}{luhn}} (const string \&codigo)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{dominios_8cpp_a9678b9d998e95c50d551bcefedfbe5d2}\label{dominios_8cpp_a9678b9d998e95c50d551bcefedfbe5d2}} 
+\index{dominios.cpp@{dominios.cpp}!luhn@{luhn}}
+\index{luhn@{luhn}!dominios.cpp@{dominios.cpp}}
+\doxysubsubsection{\texorpdfstring{luhn()}{luhn()}}
+{\footnotesize\ttfamily bool luhn (\begin{DoxyParamCaption}\item[{const string \&}]{codigo }\end{DoxyParamCaption})}
+

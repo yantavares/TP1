@@ -1,0 +1,69 @@
+\hypertarget{class_idioma}{}\doxysection{Idioma Class Reference}
+\label{class_idioma}\index{Idioma@{Idioma}}
+
+
+Padrao para representacao de idioma.  
+
+
+
+
+{\ttfamily \#include $<$dominios.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_idioma_af40ccb2305a92e8357cd4c6c1a884fb5}{set\+Valor}} (string valor)
+\item 
+string \mbox{\hyperlink{class_idioma_a516a565f8a53da05a465fdeee10af6ba}{get\+Valor}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Padrao para representacao de idioma. 
+
+Regras de formato\+:
+
+
+\begin{DoxyItemize}
+\item Idiomas disponiveis\+: Inglês, Chinês Mandarim, Hindi, Espanhol, Francês, Árabe, Bengali, Russo, Português, Indonésio;
+\item Desconsiderar acentuaçao dos idiomas. 
+\end{DoxyItemize}
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_idioma_a516a565f8a53da05a465fdeee10af6ba}\label{class_idioma_a516a565f8a53da05a465fdeee10af6ba}} 
+\index{Idioma@{Idioma}!getValor@{getValor}}
+\index{getValor@{getValor}!Idioma@{Idioma}}
+\doxysubsubsection{\texorpdfstring{getValor()}{getValor()}}
+{\footnotesize\ttfamily string Idioma\+::get\+Valor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Retorna o idioma armazenada.
+
+\begin{DoxyReturn}{Returns}
+idioma 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_idioma_af40ccb2305a92e8357cd4c6c1a884fb5}\label{class_idioma_af40ccb2305a92e8357cd4c6c1a884fb5}} 
+\index{Idioma@{Idioma}!setValor@{setValor}}
+\index{setValor@{setValor}!Idioma@{Idioma}}
+\doxysubsubsection{\texorpdfstring{setValor()}{setValor()}}
+{\footnotesize\ttfamily void Idioma\+::set\+Valor (\begin{DoxyParamCaption}\item[{string}]{valor }\end{DoxyParamCaption})}
+
+Armazena o idioma informada caso seja valido.
+
+Lança exceção caso o idioma nao esteja de acordo com as regras de formato
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor} & idioma\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dominios.\+hpp\item 
+dominios.\+cpp\end{DoxyCompactItemize}
