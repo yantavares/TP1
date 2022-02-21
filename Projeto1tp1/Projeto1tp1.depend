@@ -1,0 +1,52 @@
+# depslib dependency file v1.0
+1645446694 source:/home/yan/cbp/Projeto1tp1/main.cpp
+	<iostream>
+	"dominios.hpp"
+	"entidades.hpp"
+	"testesDominios.hpp"
+	"testesEntidades.hpp"
+
+1645207914 /home/yan/cbp/Projeto1tp1/dominios.hpp
+	<iostream>
+	<string.h>
+
+1645208108 /home/yan/cbp/Projeto1tp1/entidades.hpp
+	"dominios.hpp"
+	<stdexcept>
+	<iostream>
+	<string.h>
+
+1645208197 /home/yan/cbp/Projeto1tp1/testesDominios.hpp
+	<iostream>
+	<string.h>
+	"dominios.hpp"
+
+1645208292 /home/yan/cbp/Projeto1tp1/testesEntidades.hpp
+	"entidades.hpp"
+	<iostream>
+	<string.h>
+
+1645446694 source:/home/yan/cbp/Projeto1tp1/dominios.cpp
+	<iostream>
+	<string.h>
+	<stdexcept>
+	<cctype>
+	<map>
+	<algorithm>
+	<cstring>
+	"dominios.hpp"
+
+1645040738 source:/home/yan/cbp/Projeto1tp1/entidades.cpp
+	<iostream>
+	"entidades.hpp"
+
+1645207843 source:/home/yan/cbp/Projeto1tp1/testesDominios.cpp
+	"testesDominios.hpp"
+	<iostream>
+	<string.h>
+
+1645207843 source:/home/yan/cbp/Projeto1tp1/testesEntidades.cpp
+	"testesEntidades.hpp"
+	<iostream>
+	<string.h>
+
