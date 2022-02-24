@@ -9,7 +9,7 @@
 
 using namespace std;
 
-/// @brief Padrao para representacao de usuario:
+/// @brief Padrao para representacao de usuario
 ///
 /// Usuario contem entidades Nome, Email e Senha.
 // Classe criada por Guilherme Goncalves Soares 202042865
