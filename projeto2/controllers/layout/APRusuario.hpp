@@ -9,7 +9,7 @@
 #include "/home/yan/tp1/git/projeto2/interfaces.hpp"
 
 #define CLR_SCR system("cls");
-// 190084197 - 190129794
+
 class CntrApresentacaoUsuario:public IApresentacaoUsuario{
 private:
     IServicoUsuario *cntrServicoUsuario;
@@ -26,4 +26,4 @@ inline void CntrApresentacaoUsuario::setCntrServicoUsuario(IServicoUsuario *cntr
     cntrServicoUsuario = cntr;
 }
 
-#endif // CONTROLADORAAPTUSUARIO_H_INCLUDED
+#endif

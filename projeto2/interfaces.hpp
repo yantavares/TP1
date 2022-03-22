@@ -1,5 +1,5 @@
-#ifndef INTERFACES_H_INCLUDED
-#define INTERFACES_H_INCLUDED
+#ifndef INTERFACES_HPP_INCLUDED
+#define INTERFACES_HPP_INCLUDED
 
 #include <list>
 
@@ -8,7 +8,7 @@
 
 class IServicoAutenticacao;
 class IServicoUsuario;
-class IServicoImovel;
+class IServicoExcursao;
 
 class IApresentacaoAutenticacao {
 public:
@@ -25,12 +25,8 @@ public:
     virtual ~IApresentacaoUsuario(){}
 };
 
-class IApresentacaoImovel {
-public:
-    virtual void executar() = 0;
-    virtual void executar(Email) = 0;
-    virtual void setCntrServicoImovel(IServicoImovel*) = 0;
-    virtual ~IApresentacaoImovel(){}
+class IApresentacaoExcursao {
+
 };
 
 class IServicoAutenticacao {
@@ -48,4 +44,4 @@ public:
     virtual ~IServicoUsuario(){}
 };
 
-#endif // INTERFACES_H_INCLUDED
+#endif
