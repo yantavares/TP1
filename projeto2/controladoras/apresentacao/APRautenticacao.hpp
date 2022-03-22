@@ -9,7 +9,7 @@
 #include "/home/yan/tp1/git/projeto2/interfaces.hpp"
 
 #define CLR_SCR system("cls");
-// 190125586
+
 class CntrApresentacaoAutenticacao:public IApresentacaoAutenticacao{
 private:
     IServicoAutenticacao *cntr;
@@ -22,4 +22,4 @@ inline void CntrApresentacaoAutenticacao::setCntrServicoAutenticacao(IServicoAut
     this->cntr = cntr;
 }
 
-#endif // CONTROLADORAAPTAUTENTICACAO_H_INCLUDED
+#endif
