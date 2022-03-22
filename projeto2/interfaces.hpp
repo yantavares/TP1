@@ -1,61 +1,51 @@
-#ifndef INTERFACES_H
-#define INTERFACES_H
+#ifndef INTERFACES_H_INCLUDED
+#define INTERFACES_H_INCLUDED
 
 #include <list>
 
 #include "/home/yan/tp1/git/projeto1/dominios.hpp"
 #include "/home/yan/tp1/git/projeto1/entidades.hpp"
 
-class ISAutenticacao;
-class ISUsuario;
-class ISExcursao;
+class IServicoAutenticacao;
+class IServicoUsuario;
+class IServicoImovel;
 
-class IAAutenticacao {
+class IApresentacaoAutenticacao {
 public:
     virtual bool autenticar(Email*) = 0;
-    virtual void setCntrSAutenticacao(IAAutenticacao*) = 0;
-    virtual ~IAAutenticacao(){}
+    virtual void setCntrServicoAutenticacao(IServicoAutenticacao*) = 0;
+    virtual ~IApresentacaoAutenticacao(){}
 };
 
-class IAUsuario {
+class IApresentacaoUsuario {
 public:
     virtual void cadastrar() = 0;
     virtual bool executar(Email) = 0;
-    virtual void setCntrSUsuario(IAUsuario*) = 0;
-    virtual ~IAUsuario(){}
+    virtual void setCntrServicoUsuario(IServicoUsuario*) = 0;
+    virtual ~IApresentacaoUsuario(){}
 };
 
-class IAExcursao {
+class IApresentacaoImovel {
 public:
     virtual void executar() = 0;
     virtual void executar(Email) = 0;
-    virtual void setCntrSExcursao(ISExcursao*) = 0;
-    virtual ~IAExcursao(){}
+    virtual void setCntrServicoImovel(IServicoImovel*) = 0;
+    virtual ~IApresentacaoImovel(){}
 };
 
-class ISAutenticacao {
+class IServicoAutenticacao {
 public:
     virtual bool autenticar(Email, Senha) = 0;
-    virtual ~ISAutenticacao(){}
+    virtual ~IServicoAutenticacao(){}
 };
 
-class ISUsuario {
+class IServicoUsuario {
 public:
     virtual bool cadastrar(Usuario) = 0;
     virtual bool descadastrar(Email) = 0;
     virtual bool alterar(Usuario) = 0;
     virtual Usuario recuperar(Email) = 0;
-    virtual ~ISUsuario(){}
+    virtual ~IServicoUsuario(){}
 };
 
-class ISExcursao {
-};
-
-
-
-
-
-
-
-
-#endif
+#endif // INTERFACES_H_INCLUDED
