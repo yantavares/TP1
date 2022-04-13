@@ -3,8 +3,8 @@
 
 #include <list>
 
-#include "/home/yan/tp1/git/projeto1/dominios.hpp"
-#include "/home/yan/tp1/git/projeto1/entidades.hpp"
+#include "../projeto1/dominios.hpp"
+#include "../projeto1/entidades.hpp"
 
 class IServicoAutenticacao;
 class IServicoUsuario;

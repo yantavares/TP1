@@ -4,9 +4,9 @@
 #include <iostream>
 #include <string.h>
 
-#include "/home/yan/tp1/git/projeto1/dominios.hpp"
-#include "/home/yan/tp1/git/projeto1/entidades.hpp"
-#include "/home/yan/tp1/git/projeto2/interfaces.hpp"
+#include "../projeto1/dominios.hpp"
+#include "../projeto1/entidades.hpp"
+#include "../interfaces.hpp"
 
 #define CLR_SCR system("cls");
 
