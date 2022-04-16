@@ -2,9 +2,12 @@
 #define INTERFACES_HPP_INCLUDED
 
 #include <list>
+#include <vector>
 
 #include "../projeto1/dominios.hpp"
 #include "../projeto1/entidades.hpp"
+
+using namespace std;
 
 class IServicoAutenticacao;
 class IServicoUsuario;
@@ -36,11 +39,18 @@ public:
 };
 
 class IServicoUsuario {
+private:
+    vector<string> emails;
+    vector<string> nomes;
+    vector<string> emails;
+    vector<Usuario> usuarios;
+
 public:
     virtual bool cadastrar(Usuario) = 0;
     virtual bool descadastrar(Email) = 0;
     virtual bool alterar(Usuario) = 0;
     virtual Usuario recuperar(Email) = 0;
+    virtual int acharIndice(vector<string> emails, string email);
     virtual ~IServicoUsuario(){}
 };
 

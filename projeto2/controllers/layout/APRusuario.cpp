@@ -66,6 +66,7 @@ void CntrApresentacaoUsuario::cadastrar() {
     char texto2[] = "Nome            :";
     char texto3[] = "Email           :";
     char texto4[] = "Senha           :";
+    char texto5[] = "Telefone        :";
     char texto6[] = "Dados em formato incorreto. Digite algo.";
     char texto7[] = "Sucesso no cadastramento. Digite algo.";
     char texto8[] = "Falha no cadastramento. Digite algo.";
@@ -75,6 +76,7 @@ void CntrApresentacaoUsuario::cadastrar() {
     Nome nome;
     Email email;
     Senha senha;
+    Telefone telefone;
 
     bool apresentar = true;
 
@@ -88,11 +90,15 @@ void CntrApresentacaoUsuario::cadastrar() {
         getline(cin, campo2);
         cout << texto4 << " ";
         getline(cin, campo3);
+        cout << texto5 << " ";
+        getline(cin, campo4);
 
         try {
-            nome.setValor(campo1);
-            email.setValor(campo2);
-            senha.setValor(campo3);
+            nome.setNome(campo1);
+            email.setEmail(campo2);
+            senha.setSenha(campo3);
+            telefone.setTelefone(campo4);
+
             apresentar = false;
         } catch(invalid_argument &exp) {
             cout << texto6 << endl;
@@ -109,35 +115,37 @@ void CntrApresentacaoUsuario::cadastrar() {
     usuario.setNome(nome);
     usuario.setEmail(email);
     usuario.setSenha(senha);
+    usuario.setTelefone(telefone);
 
 
     if(cntrServicoUsuario->cadastrar(usuario)) {
-        cout << texto7 << endl;
+        cout << texto7 << en
         return;
     }
 
-    cout << texto8 << endl;
+    cout << texto8 << e
 
     return;
 }
 
 void CntrApresentacaoUsuario::consultarDadosUsuario(Email email) {
-    string pass;
     Usuario usuario;
     usuario = cntrServicoUsuario->recuperar(email);
 
     CLR_SCR;
     cout << "DADOS DO USUARIO" << endl;
-    cout << "Nome    : " << usuario.getNome().getValor() << endl;
-    cout << "Email   : " << usuario.getEmail().getValor() << endl;
-    cout << "Senha   : " << usuario.getSenha().getValor() << endl;
-    cout << "Digite algo para retornar." << endl;
-    cin >> pass;
+    cout << "Nome    : " << usuario.getNome().getNome() << endl;
+    cout << "Email   : " << usuario.getEmail().getEmail() << endl;
+    cout << "Telefone: " << usuario.getTelefone().getTelefone() << endl;
+    cout << "Senha   : " << usuario.getSenha().getSenha() << endl;
+
+    cout << "Digite algo para retornar." << e
 }
 
 void CntrApresentacaoUsuario::editarDadosUsuario(Email email) {
     Nome nome;
     Senha senha;
+    Telefone telefone;
     Usuario usuario;
     usuario = cntrServicoUsuario->recuperar(email);
 
@@ -150,9 +158,10 @@ void CntrApresentacaoUsuario::editarDadosUsuario(Email email) {
             CLR_SCR;
             cout << "-----ATUALIZACAO DE DADOS-----" << endl;
             cout << "---------DADOS ATUAIS---------" << endl;
-            cout << "Nome    : " << usuario.getNome().getValor() << endl;
-            cout << "Email   : " << usuario.getEmail().getValor() << endl;
-            cout << "Senha   : " << usuario.getSenha().getValor() << endl;
+            cout << "Nome    : " << usuario.getNome().getNome() << endl;
+            cout << "Email   : " << usuario.getEmail().getEmail() << endl;
+            cout << "Telefone: " << usuario.getTelefone().getTelefone() << endl;
+            cout << "Senha   : " << usuario.getSenha().getSenha() << endl;
             cout << "------------------------------" << endl;
             cout << "---------NOVOS DADOS----------" << endl;
 
@@ -165,10 +174,12 @@ void CntrApresentacaoUsuario::editarDadosUsuario(Email email) {
             cout << "Alterar telefone: ";
             getline(cin, campo3);
 
-            nome.setValor(campo1);
-            senha.setValor(campo2);
+            nome.setNome(campo1);
+            senha.setSenha(campo2);
+            telefone.setTelefone(campo3);
             usuario.setNome(nome);
             usuario.setSenha(senha);
+            usuario.setTelefone(telefone);
 
             apresentar = false;
         } catch(invalid_argument &exp){
@@ -177,7 +188,7 @@ void CntrApresentacaoUsuario::editarDadosUsuario(Email email) {
             cout << "2 - Para retornar." << endl;
             cin >> campo;
             if (campo == 2)
-                return;
+                retur
         }
     }
 
@@ -186,5 +197,5 @@ void CntrApresentacaoUsuario::editarDadosUsuario(Email email) {
         cout << "Dados atualizados com sucesso!" << endl;
     else
         cout << "Falha na atualizacao dos dados!" << endl;
-    cout << "Digite algo para retornar." << endl;
+    cout << "Digite algo para retornar." << e
 }
