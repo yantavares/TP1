@@ -8,16 +8,12 @@
 #include "../projeto1/dominios.hpp"
 #include "../projeto1/entidades.hpp"
 #include "../interfaces.hpp"
+#include "../bancodedados.hpp"
 
 using namespace std;
 
 class CntrServicoUsuario: public IServicoUsuario {
-private:
-    list<Excursao> recuperarExcursao(Email);
-    vector<string> emails;
-    vector<string> nomes;
-    vector<string> senhas;
-    vector<Usuario> usuarios;
+
 public:
     bool cadastrar(Usuario);
     Usuario recuperar(Email);
