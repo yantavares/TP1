@@ -8,11 +8,11 @@
 #include "../projeto1/dominios.hpp"
 #include "../projeto1/entidades.hpp"
 #include "../interfaces.hpp"
+#include "../bancodedados.hpp"
 
 class CntrServicoAutenticacao: public IServicoAutenticacao {
 public:
     bool autenticar(Email, Senha);
-    int acharIndice(vector<string> emails, string email);
 };
 
 

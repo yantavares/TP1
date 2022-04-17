@@ -50,3 +50,17 @@ bool BD::removerUsuario(Email email){
     emails.erase(emails.begin() + index);
 
 }
+bool BD::autenticar(Email email, Senha senha){
+    string emailUser = email.getValor();
+    string senhaUser = senha.getValor();
+    int index;
+    if(std::find(emails.begin(), emails.end(), emailUser) != emails.end()) {
+        index = acharIndice(emails, emailUser);
+        if(usuarios[index].getEmail().getValor() == emailUser && usuarios[index].getSenha().getValor() == senhaUser){
+            return 1;
+        }
+        return 0;
+    } else {
+        return 0;
+    }
+}

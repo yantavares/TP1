@@ -21,4 +21,6 @@ public:
     bool removerUsuario(Email email);
     bool cadastrarUsuario(Usuario usuario);
     bool alterarUsuario(Usuario usuario);
+    bool autenticar(Email, Senha);
+
 };

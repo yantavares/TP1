@@ -19,6 +19,7 @@ public:
     Usuario recuperar(Email);
     bool alterar(Usuario);
     bool descadastrar(Email);
+
 };
 
 #endif

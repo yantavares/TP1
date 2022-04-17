@@ -9,9 +9,10 @@ bool CntrServicoUsuario::cadastrar(Usuario usuario) {
       bd.cadastrarUsuario(usuario);
     }catch(...){
         cout << "Usuario ja cadastrado!";
-        throw;
+        return 0;
     }
     cout << "Usuario cadastrado com sucesso";
+    return 1;
     
 }
 Usuario CntrServicoUsuario::recuperar(Email email) {
@@ -22,9 +23,10 @@ Usuario CntrServicoUsuario::recuperar(Email email) {
       cout << user.getEmail().getValor() << endl;
       cout << user.getNome().getValor() << endl;
       cout << user.getSenha().getValor() << endl;
+      return user;
     }catch(...){
         cout << "Usuario nao encontrado!";
-        throw;
+        return;
     }
 
 }
@@ -35,9 +37,10 @@ bool CntrServicoUsuario::alterar(Usuario usuario) {
       bd.alterarUsuario(usuario);
     }catch(...){
         cout << "Não foi possivel alterar seu usuario";
-        throw;
+        return 0;
     }
     cout << "Usuario alterado com sucesso";
+    return 1;
 }
 
 bool CntrServicoUsuario::descadastrar(Email email) {
@@ -46,7 +49,9 @@ bool CntrServicoUsuario::descadastrar(Email email) {
       bd.removerUsuario(email);
     }catch(...){
         cout << "Nao foi possivel apagar o usuario!";
-        throw;
+        return 0;
     }
     cout << "Usuario apagado com sucesso";
+    return 1;
 }
+
