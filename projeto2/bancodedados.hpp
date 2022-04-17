@@ -17,7 +17,6 @@ private:
 public:
     Usuario acessar(Email email);
 
-
     int acharIndice(vector<string> emails, string email);
     bool removerUsuario(Email email);
     bool cadastrarUsuario(Usuario usuario);

@@ -19,7 +19,6 @@ public:
     Usuario recuperar(Email);
     bool alterar(Usuario);
     bool descadastrar(Email);
-    int acharIndice(vector<string> emails, string email);
 };
 
 #endif
