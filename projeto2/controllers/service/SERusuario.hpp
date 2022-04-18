@@ -5,10 +5,11 @@
 #include <algorithm>
 #include <string.h>
 #include <list>
-#include "../projeto1/dominios.hpp"
-#include "../projeto1/entidades.hpp"
-#include "../interfaces.hpp"
-#include "../bancodedados.hpp"
+#include <vector>
+#include "../../../projeto1/dominios.hpp"
+#include "../../../projeto1/entidades.hpp"
+#include "../../interfaces.hpp"
+#include "../../bancodedados.hpp"
 
 using namespace std;
 

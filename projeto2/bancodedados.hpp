@@ -1,3 +1,6 @@
+#ifndef aaaaaaaaaaaaaaaaa
+#define aaaaaaaaaaaaaaaaa
+
 #include <iostream>
 #include <algorithm>
 #include <string.h>
@@ -11,16 +14,16 @@ using namespace std;
 class BD{
 private:
     vector<string> emails;
-    vector<string> nomes;
-    vector<string> senhas;
     vector<Usuario> usuarios;
 public:
-    Usuario acessar(Email email);
+    Usuario acessar(Email);
 
-    int acharIndice(vector<string> emails, string email);
-    bool removerUsuario(Email email);
-    bool cadastrarUsuario(Usuario usuario);
-    bool alterarUsuario(Usuario usuario);
+    int acharIndice(string);
+    bool removerUsuario(Email);
+    bool cadastrarUsuario(Usuario);
+    bool alterarUsuario(Usuario);
     bool autenticar(Email, Senha);
 
 };
+
+#endif

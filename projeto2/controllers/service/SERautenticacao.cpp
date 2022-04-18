@@ -1,5 +1,6 @@
 #include "SERautenticacao.hpp"
-#include "bancodedados.hpp"
+
+using namespace std;
 
 bool CntrServicoAutenticacao::autenticar(Email email, Senha senha) {
     BD bd;

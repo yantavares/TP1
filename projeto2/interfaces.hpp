@@ -39,18 +39,12 @@ public:
 };
 
 class IServicoUsuario {
-private:
-    vector<string> emails;
-    vector<string> nomes;
-    vector<string> emails;
-    vector<Usuario> usuarios;
-
 public:
     virtual bool cadastrar(Usuario) = 0;
     virtual bool descadastrar(Email) = 0;
     virtual bool alterar(Usuario) = 0;
     virtual Usuario recuperar(Email) = 0;
-    virtual int acharIndice(vector<string> emails, string email);
+    virtual int acharIndice(vector<string>, string);
     virtual ~IServicoUsuario(){}
 };
 

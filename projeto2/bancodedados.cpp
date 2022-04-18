@@ -1,9 +1,11 @@
 #include "bancodedados.hpp"
 
+using namespace std;
+
 bool BD::cadastrarUsuario(Usuario usuario){
     string email, nome, senha;
     email = usuario.getEmail().getValor();
-    if(std::find(email.begin(), email.end(), email) != email.end()) {
+    if(find(emails.begin(), emails.end(), email) != emails.end()) {
         return 1;
     } else {
         usuarios.push_back(usuario);
@@ -12,7 +14,7 @@ bool BD::cadastrarUsuario(Usuario usuario){
 }
 }
 
-int BD::acharIndice(vector<string> emails, string email){
+int BD::acharIndice(string email){
     auto it = find(emails.begin(), emails.end(), email);
  
     if (it != emails.end())
@@ -27,35 +29,36 @@ int BD::acharIndice(vector<string> emails, string email){
 }
 
 Usuario BD::acessar(Email email){
-    if (acharIndice(emails, email.getValor())){
-        return usuarios[acharIndice(emails, email.getValor())];
+    if (acharIndice(email.getValor())){
+        return usuarios[acharIndice(email.getValor())];
     }
-    return;
 }
 
 bool BD::alterarUsuario(Usuario usuario){
     int index;
-    index = acharIndice(emails, usuario.getEmail().getValor());
+    index = acharIndice(usuario.getEmail().getValor());
     usuarios.erase(usuarios.begin() + index);
     emails.erase(emails.begin() + index);
 
     usuarios.push_back(usuario);
     emails.push_back(usuario.getEmail().getValor());
+    return 1;
 }
 
 bool BD::removerUsuario(Email email){
     int index;
-    index = acharIndice(emails, email.getValor());
+    index = acharIndice(email.getValor());
     usuarios.erase(usuarios.begin() + index);
     emails.erase(emails.begin() + index);
+    return 1;
 
 }
 bool BD::autenticar(Email email, Senha senha){
     string emailUser = email.getValor();
     string senhaUser = senha.getValor();
     int index;
-    if(std::find(emails.begin(), emails.end(), emailUser) != emails.end()) {
-        index = acharIndice(emails, emailUser);
+    if(find(emails.begin(), emails.end(), emailUser) != emails.end()) {
+        index = acharIndice(emailUser);
         if(usuarios[index].getEmail().getValor() == emailUser && usuarios[index].getSenha().getValor() == senhaUser){
             return 1;
         }

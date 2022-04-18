@@ -1,5 +1,7 @@
 #include "APRusuario.hpp"
 
+using namespace std;
+
 bool CntrApresentacaoUsuario::executar(Email email) {
     char texto1[] = "Selecione um dos servicos : ";
     char texto2[] = "1 - Consultar dados pessoais.";

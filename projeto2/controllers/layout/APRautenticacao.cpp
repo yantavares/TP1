@@ -1,5 +1,7 @@
 #include "APRautenticacao.hpp"
 
+using namespace std;
+
 bool CntrApresentacaoAutenticacao::autenticar(Email *email) {
     char texto1[]="Digite o email: ";
     char texto2[]="Digite a senha: ";

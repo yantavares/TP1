@@ -1,5 +1,4 @@
 #include "SERusuario.hpp"
-#include "bancodedados.hpp"
 
 using namespace std;
 
@@ -25,8 +24,7 @@ Usuario CntrServicoUsuario::recuperar(Email email) {
       cout << user.getSenha().getValor() << endl;
       return user;
     }catch(...){
-        cout << "Usuario nao encontrado!";
-        return;
+      cout << "Usuario nao encontrado!";
     }
 
 }
