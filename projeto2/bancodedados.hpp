@@ -1,5 +1,5 @@
-#ifndef AAAABBB
-#define AAAABBB
+#ifndef BANCODEDADOS_HPP_INCLUDED
+#define BANCODEDADOS_HPP_INCLUDED
 
 #include <iostream>
 #include <algorithm>
@@ -14,16 +14,19 @@ using namespace std;
 class BD{
     
 public:
-    Usuario acessar(Email, vector<string>&, vector<Usuario>& );
+    Usuario acessar(Email);
 
     static vector<string> emails;
     static vector<Usuario> usuarios;
 
+    static list<Excursao> excursoes;
+    static list<Sessao> sessoes;
+
     int acharIndice(string);
-    bool removerUsuario(Email, vector<string>&, vector<Usuario>& );
-    bool cadastrarUsuario(Usuario, vector<string>&, vector<Usuario>& );
-    bool alterarUsuario(Usuario, vector<string>&, vector<Usuario>& );
-    bool autenticar(Email, Senha, vector<string>&, vector<Usuario>& );
+    bool removerUsuario(Email);
+    bool cadastrarUsuario(Usuario);
+    bool alterarUsuario(Usuario);
+    bool autenticar(Email, Senha);
 
 };
 

@@ -4,10 +4,10 @@ using namespace std;
 
 bool CntrServicoAutenticacao::autenticar(Email email, Senha senha) {
     BD bd;
-    if(bd.autenticar(email, senha, BD::emails, BD::usuarios)){
+    if(bd.autenticar(email, senha)){
         return true;
     }else{
-        return true;
+        return false;
     }
 
 }

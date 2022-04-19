@@ -13,7 +13,6 @@
 
 using namespace std;
 
-#define CLR_SCR system("cls");
 
 class CntrApresentacaoControle {
 private:

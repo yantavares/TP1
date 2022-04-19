@@ -2,7 +2,10 @@
 
 using namespace std;
 
-bool BD::cadastrarUsuario(Usuario usuario, vector<string>& emails, vector<Usuario>& usuarios){
+std::vector<string> BD::emails;
+std::vector<Usuario> BD::usuarios;
+
+bool BD::cadastrarUsuario(Usuario usuario){
     string email, nome, senha;
     email = usuario.getEmail().getValor();
     if(find(emails.begin(), emails.end(), email) != emails.end()) {
@@ -28,13 +31,16 @@ int BD::acharIndice(string email){
     return -1;
 }
 
-Usuario BD::acessar(Email email, vector<string>& emails, vector<Usuario>& usuarios){
+Usuario BD::acessar(Email email){
     if (acharIndice(email.getValor())){
         return usuarios[acharIndice(email.getValor())];
     }
+    else{
+        return usuarios[0];
+    }
 }
 
-bool BD::alterarUsuario(Usuario usuario, vector<string>& emails, vector<Usuario>& usuarios){
+bool BD::alterarUsuario(Usuario usuario){
     int index;
     index = acharIndice(usuario.getEmail().getValor());
     usuarios.erase(usuarios.begin() + index);
@@ -45,7 +51,7 @@ bool BD::alterarUsuario(Usuario usuario, vector<string>& emails, vector<Usuario>
     return 1;
 }
 
-bool BD::removerUsuario(Email email , vector<string>& emails, vector<Usuario>& usuarios){
+bool BD::removerUsuario(Email email){
     int index;
     index = acharIndice(email.getValor());
     usuarios.erase(usuarios.begin() + index);
@@ -53,7 +59,7 @@ bool BD::removerUsuario(Email email , vector<string>& emails, vector<Usuario>& u
     return 1;
 
 }
-bool BD::autenticar(Email email, Senha senha, vector<string>& emails, vector<Usuario>& usuarios){
+bool BD::autenticar(Email email, Senha senha){
     string emailUser = email.getValor();
     string senhaUser = senha.getValor();
     int index;

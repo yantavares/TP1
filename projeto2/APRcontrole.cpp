@@ -21,7 +21,6 @@ void CntrApresentacaoControle::executar(){
     bool apresentar = true;
 
     while(apresentar) {
-        CLR_SCR;
 
         cout << texto1 << endl;
         cout << texto2 << endl;
@@ -36,8 +35,7 @@ void CntrApresentacaoControle::executar(){
                 if(cntrApresentacaoAutenticacao->autenticar(&email)) {
                     bool apresentar = true;
                     while(apresentar){
-                        CLR_SCR;
-                        cout << texto6 << endl;
+                                        cout << texto6 << endl;
                         cout << texto7 << endl;
                         cout << texto8 << endl;
                         cout << texto9 << endl;
@@ -48,8 +46,7 @@ void CntrApresentacaoControle::executar(){
                             case 1:
                                 if(!cntrApresentacaoUsuario->executar(email)){
                                     apresentar = false;
-                                    CLR_SCR;
-                                    cout << "Usuario nao existe" << endl;
+                                                                cout << "Usuario nao existe" << endl;
                                 }
                                 break;
                             case 2:
@@ -60,8 +57,7 @@ void CntrApresentacaoControle::executar(){
                         }
                     }
                 } else {
-                    CLR_SCR;
-                    cout << texto10 << endl;
+                                cout << texto10 << endl;
                 }
                 break;
             case 2:

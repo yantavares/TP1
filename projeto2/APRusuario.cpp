@@ -68,9 +68,9 @@ void CntrApresentacaoUsuario::cadastrar() {
     char texto2[] = "Nome:";
     char texto3[] = "Email:";
     char texto4[] = "Senha:";
-    char texto6[] = "Dados em formato incorreto. Digite algo.";
-    char texto7[] = "Sucesso no cadastramento. Digite algo.";
-    char texto8[] = "Falha no cadastramento. Digite algo.";
+    char texto6[] = "Dados em formato incorreto.";
+    char texto7[] = "Sucesso no cadastramento.";
+    char texto8[] = "Falha no cadastramento.";
     int campo;
     string campo1, campo2, campo3;
 
@@ -134,7 +134,6 @@ void CntrApresentacaoUsuario::consultarDadosUsuario(Email email) {
     cout << "Email: " << usuario.getEmail().getValor() << endl;
     cout << "Senha: " << usuario.getSenha().getValor() << endl;
 
-    cout << "Digite algo para retornar." << endl;
 }
 
 void CntrApresentacaoUsuario::editarDadosUsuario(Email email) {
@@ -151,22 +150,21 @@ void CntrApresentacaoUsuario::editarDadosUsuario(Email email) {
     while(apresentar){
         try {
             
-            cout << "-----ATUALIZACAO DE DADOS-----" << endl;
-            cout << "---------DADOS ATUAIS---------" << endl;
+            cout << "ATUALIZACAO DE DADOS" << endl;
+            cout << "DADOS ATUAIS" << endl;
             cout << "Nome: " << usuario.getNome().getValor() << endl;
             cout << "Email: " << usuario.getEmail().getValor() << endl;
             cout << "Senha: " << usuario.getSenha().getValor() << endl;
             cout << "------------------------------" << endl;
-            cout << "---------NOVOS DADOS----------" << endl;
+            cout << "NOVOS DADOS" << endl;
 
             cout << "Alterar nome: ";
+            cin.ignore();
             getline(cin, campo1);
 
             cout << "Alterar senha: ";
             getline(cin, campo2);
 
-            cout << "Alterar telefone: ";
-            getline(cin, campo3);
 
             nome.setValor(campo1);
             senha.setValor(campo2);
@@ -190,5 +188,4 @@ void CntrApresentacaoUsuario::editarDadosUsuario(Email email) {
         cout << "Dados atualizados com sucesso!" << endl;
     else
         cout << "Falha na atualizacao dos dados!" << endl;
-    cout << "Digite algo para retornar." << endl;
 }
