@@ -13,10 +13,10 @@ bool CntrApresentacaoAutenticacao::autenticar(Email *email) {
     while(true) {
         CLR_SCR;
 
-        cout << texto1 << endl;
+        cout << texto1;
         cin.ignore();
         getline(cin, campo1);
-        cout << texto2 <<endl;
+        cout << texto2;
         getline(cin, campo2);
 
         try {

@@ -4,12 +4,10 @@ using namespace std;
 
 bool CntrServicoAutenticacao::autenticar(Email email, Senha senha) {
     BD bd;
-    try{
-        bd.autenticar(email, senha);
-    }catch(...){
-        cout << "Usuario nao encontrado";
-        return 0;
+    if(bd.autenticar(email, senha, BD::emails, BD::usuarios)){
+        return true;
+    }else{
+        return true;
     }
-    cout << "Autenticação realizada com sucesso";
-    return 1;
+
 }

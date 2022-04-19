@@ -2,6 +2,7 @@
 #include <stdexcept>
 #include <iostream>
 #include <vector>
+#include <list>
 
 #include "dominios.hpp"
 #include "entidades.hpp"

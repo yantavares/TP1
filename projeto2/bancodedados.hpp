@@ -12,17 +12,18 @@
 using namespace std;
 
 class BD{
-private:
-    vector<string> emails;
-    vector<Usuario> usuarios;
+    
 public:
-    Usuario acessar(Email);
+    Usuario acessar(Email, vector<string>&, vector<Usuario>& );
+
+    static vector<string> emails;
+    static vector<Usuario> usuarios;
 
     int acharIndice(string);
-    bool removerUsuario(Email);
-    bool cadastrarUsuario(Usuario);
-    bool alterarUsuario(Usuario);
-    bool autenticar(Email, Senha);
+    bool removerUsuario(Email, vector<string>&, vector<Usuario>& );
+    bool cadastrarUsuario(Usuario, vector<string>&, vector<Usuario>& );
+    bool alterarUsuario(Usuario, vector<string>&, vector<Usuario>& );
+    bool autenticar(Email, Senha, vector<string>&, vector<Usuario>& );
 
 };
 
