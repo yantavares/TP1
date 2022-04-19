@@ -106,3 +106,12 @@ void CntrApresentacaoExcursao::descadastrarExcursao(Email email) {
         }
     }
 }
+void CntrApresentacaoExcursao::listarExcursoes(Email email) {
+    list<Excursao>excursoes = cntr->recuperarExcursoes(email);
+    list<Excursao> :: iterator Excursao;
+    cout << "-------------------------LISTA DE EXCURSOES-------------------------" << endl;
+    for(Excursao =excursoes.begin(); Excursao!=excursoes.end(); ++Excursao) {
+        mostrarExcursao(*Excursao);
+    }
+    cout << "Digite algo para retornar." << endl;
+}

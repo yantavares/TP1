@@ -11,7 +11,7 @@
 
 #include "bancodedados/acessoDB.hpp"
 
-class CntrServicoImovel: public IServicoExcursao {
+class CntrServicoExcursao: public IServicoExcursao {
 public:
     list<Excursao> recuperarExcursoes();
     list<Excursao> recuperarExcursoes(Email);
@@ -29,4 +29,4 @@ public:
     list<Codigo> recuperarCodigosSessoes(Email);
 };
 
-#endif 
+#endif
