@@ -1,13 +1,13 @@
-#ifndef aaaaaaaaaaaaaaaaa
-#define aaaaaaaaaaaaaaaaa
+#ifndef AAAABBB
+#define AAAABBB
 
 #include <iostream>
 #include <algorithm>
 #include <string.h>
 #include <list>
 #include <vector>
-#include "../projeto1/dominios.hpp"
-#include "../projeto1/entidades.hpp"
+#include "dominios.hpp"
+#include "entidades.hpp"
 
 using namespace std;
 

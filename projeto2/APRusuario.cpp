@@ -16,7 +16,7 @@ bool CntrApresentacaoUsuario::executar(Email email) {
 
     while(apresentar) {
 
-        CLR_SCR;
+        
         cout << texto1 << endl;
         cout << texto2 << endl;
         cout << texto3 << endl;
@@ -47,7 +47,7 @@ bool CntrApresentacaoUsuario::executar(Email email) {
 
 bool CntrApresentacaoUsuario::excluirUsuario(Email email) {
     int campo;
-    CLR_SCR;
+    
     cout << "Tem certeza que deseja excluir seu usuario?" << endl;
     cout << "1 - Sim, quero excluir." << endl;
     cout << "2 - Nao tenho certeza." << endl;
@@ -65,15 +65,14 @@ bool CntrApresentacaoUsuario::excluirUsuario(Email email) {
 
 void CntrApresentacaoUsuario::cadastrar() {
     char texto1[] = "Preencha os seguintes campos:";
-    char texto2[] = "Nome            :";
-    char texto3[] = "Email           :";
-    char texto4[] = "Senha           :";
-    char texto5[] = "Telefone        :";
+    char texto2[] = "Nome:";
+    char texto3[] = "Email:";
+    char texto4[] = "Senha:";
     char texto6[] = "Dados em formato incorreto. Digite algo.";
     char texto7[] = "Sucesso no cadastramento. Digite algo.";
     char texto8[] = "Falha no cadastramento. Digite algo.";
     int campo;
-    string campo1, campo2, campo3, campo4;
+    string campo1, campo2, campo3;
 
     Nome nome;
     Email email;
@@ -82,18 +81,16 @@ void CntrApresentacaoUsuario::cadastrar() {
     bool apresentar = true;
 
     while(apresentar){
-        CLR_SCR;
+        
         cout << "-----CADASTRO DE USUARIO-----" << endl;
         cout << texto1 << endl;
         cout << texto2 << " ";
+        cin.ignore();
         getline(cin, campo1);
         cout << texto3 << " ";
         getline(cin, campo2);
         cout << texto4 << " ";
         getline(cin, campo3);
-        cout << texto5 << " ";
-        getline(cin, campo4);
-
         try {
             nome.setValor(campo1);
             email.setValor(campo2);
@@ -131,17 +128,18 @@ void CntrApresentacaoUsuario::consultarDadosUsuario(Email email) {
     Usuario usuario;
     usuario = cntr->recuperar(email);
 
-    CLR_SCR;
+    
     cout << "DADOS DO USUARIO" << endl;
-    cout << "Nome    : " << usuario.getNome().getValor() << endl;
-    cout << "Email   : " << usuario.getEmail().getValor() << endl;
-    cout << "Senha   : " << usuario.getSenha().getValor() << endl;
+    cout << "Nome: " << usuario.getNome().getValor() << endl;
+    cout << "Email: " << usuario.getEmail().getValor() << endl;
+    cout << "Senha: " << usuario.getSenha().getValor() << endl;
 
     cout << "Digite algo para retornar." << endl;
 }
 
 void CntrApresentacaoUsuario::editarDadosUsuario(Email email) {
     Nome nome;
+    int pass;
     Senha senha;
     Usuario usuario;
     usuario = cntr->recuperar(email);
@@ -152,12 +150,12 @@ void CntrApresentacaoUsuario::editarDadosUsuario(Email email) {
 
     while(apresentar){
         try {
-            CLR_SCR;
+            
             cout << "-----ATUALIZACAO DE DADOS-----" << endl;
             cout << "---------DADOS ATUAIS---------" << endl;
-            cout << "Nome    : " << usuario.getNome().getValor() << endl;
-            cout << "Email   : " << usuario.getEmail().getValor() << endl;
-            cout << "Senha   : " << usuario.getSenha().getValor() << endl;
+            cout << "Nome: " << usuario.getNome().getValor() << endl;
+            cout << "Email: " << usuario.getEmail().getValor() << endl;
+            cout << "Senha: " << usuario.getSenha().getValor() << endl;
             cout << "------------------------------" << endl;
             cout << "---------NOVOS DADOS----------" << endl;
 

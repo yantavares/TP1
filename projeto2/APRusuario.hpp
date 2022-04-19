@@ -5,14 +5,13 @@
 #include <string.h>
 #include <vector>
 
-#include "../../../projeto1/dominios.hpp"
-#include "../../../projeto1/entidades.hpp"
-#include "../../interfaces.hpp"
-#include "../../bancodedados.hpp"
+#include "dominios.hpp"
+#include "entidades.hpp"
+#include "interfaces.hpp"
+#include "bancodedados.hpp"
 
 using namespace std;
 
-#define CLR_SCR system("cls");
 
 class CntrApresentacaoUsuario:public IApresentacaoUsuario{
 private:

@@ -1,21 +1,19 @@
 #include <string.h>
 #include <stdexcept>
 #include <iostream>
-#include <cstdlib>
+#include <vector>
 
-#include "../projeto1/dominios.hpp"
-#include "../projeto1/entidades.hpp"
+#include "dominios.hpp"
+#include "entidades.hpp"
 #include "bancodedados.hpp"
 #include "interfaces.hpp"
 
-#include "./controllers/layout/APRcontrole.hpp"
-#include "./controllers/layout/APRautenticacao.hpp"
-#include "./controllers/layout/APRusuario.hpp"
-//#include "controllers/layout/APRimovel.hpp"
+#include "APRcontrole.hpp"
+#include "APRautenticacao.hpp"
+#include "APRusuario.hpp"
 
-#include "./controllers/service/SERautenticacao.hpp"
-#include "./controllers/service/SERusuario.hpp"
-//#include "controllers/service/SERimovel.hpp"
+#include "SERautenticacao.hpp"
+#include "SERusuario.hpp"
 
 using namespace std;
 
