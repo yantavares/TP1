@@ -11,7 +11,6 @@ bool CntrApresentacaoAutenticacao::autenticar(Email *email) {
     Senha senha;
 
     while(true) {
-        CLR_SCR;
 
         cout << texto1;
         cin.ignore();
@@ -24,7 +23,7 @@ bool CntrApresentacaoAutenticacao::autenticar(Email *email) {
             senha.setValor(campo2);
             break;
         } catch (invalid_argument &exp) {
-            CLR_SCR;
+
             return false;
         }
     }

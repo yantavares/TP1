@@ -50,17 +50,13 @@ public:
     virtual bool cadastrarExcursao(Excursao, Email) = 0;
     virtual bool alterar(Excursao) = 0;
     virtual Excursao recuperarExcursao(Codigo) = 0;
-    virtual list<Excursao> recuperarExcursoes() = 0;
-    virtual list<Excursao> recuperarExcursoes(Email) = 0;
-    virtual Email recuperarDonoExcursao(Codigo) = 0;
+    virtual vector<Excursao> recuperarExcursoes() = 0;
     virtual bool deletarExcursao(Excursao) = 0;
 
     virtual bool deletarSessao(Codigo) = 0;
     virtual bool cadastrarSessao(Sessao, Email, Codigo) = 0;
-    virtual list<Sessao> recuperarSessoes() = 0;
-    virtual list<Sessao> recuperarSessoes(Email) = 0;
-    virtual list<Sessao> recuperarSessoes(Codigo) = 0;
-    virtual list<Codigo> recuperarCodigosSessoes(Email) = 0;
+    virtual vector<Sessao> recuperarSessoes() = 0;
+    virtual vector<Sessao> recuperarSessoes(Codigo) = 0;
     virtual ~IServicoExcursao(){}
 };
 

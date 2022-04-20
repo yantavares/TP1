@@ -50,7 +50,7 @@ void CntrApresentacaoControle::executar(){
                                 }
                                 break;
                             case 2:
-                                //cntrApresentacaoImovel->executar(email);
+                                cntrApresentacaoExcursao->executar(email);
                                 break;
                             case 3: apresentar = false;
                                 break;
@@ -64,7 +64,7 @@ void CntrApresentacaoControle::executar(){
                 cntrApresentacaoUsuario->cadastrar();
                 break;
             case 3:
-                //cntrApresentacaoImovel->executar();
+                cntrApresentacaoExcursao->executar();
                 break;
             case 4:
                 apresentar = false;

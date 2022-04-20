@@ -12,7 +12,6 @@
 
 using namespace std;
 
-#define CLR_SCR system("cls");
 
 class CntrApresentacaoAutenticacao:public IApresentacaoAutenticacao{
 private:

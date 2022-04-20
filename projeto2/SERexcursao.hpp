@@ -3,30 +3,27 @@
 
 #include <iostream>
 #include <string.h>
-#include <list>
+#include <vector>
 
 #include "dominios.hpp"
 #include "entidades.hpp"
 #include "interfaces.hpp"
 
-#include "bancodedados/acessoDB.hpp"
+#include "bancodedados.hpp"
 
 class CntrServicoExcursao: public IServicoExcursao {
 public:
-    list<Excursao> recuperarExcursoes();
-    list<Excursao> recuperarExcursoes(Email);
+    vector<Excursao> recuperarExcursoes();
     bool cadastrarExcursao(Excursao, Email);
     Excursao recuperarExcursao(Codigo);
     Email recuperarDonoExcursao(Codigo);
     bool alterar(Excursao);
-    bool deletarExcursao(Excursao);
+    bool deletarExcursao(Codigo);
 
     bool deletarSessao(Codigo);
     bool cadastrarSessao(Sessao, Email, Codigo);
-    list<Sessao> recuperarSessoes();
-    list<Sessao> recuperarSessoes(Email);
-    list<Sessao> recuperarSessoes(Codigo);
-    list<Codigo> recuperarCodigosSessoes(Email);
+    vector<Sessao> recuperarSessoes();
+    Sessao recuperarSessao(Codigo);
 };
 
 #endif

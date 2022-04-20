@@ -58,7 +58,7 @@ void CntrApresentacaoExcursao::executar(Email email) {
                 descadastrarExcursao(email);
                 break;
             case 6:
-                listarExcursoes(email);
+                //listarExcursoes(email);
                 break;
 
             case 7:
@@ -68,8 +68,8 @@ void CntrApresentacaoExcursao::executar(Email email) {
 }
 
 void CntrApresentacaoExcursao::descadastrarExcursao(Email email) {
-    list<Excursao> excursao = cntr->recuperarExcursoes(email);
-    list<Excursao> :: iterator Excursao;
+    vector<Excursao> excursao = cntr->recuperarExcursoes();
+    vector<Excursao> :: iterator Excursao;
     Codigo codigo;
     string entrada;
     int campo;
@@ -106,9 +106,9 @@ void CntrApresentacaoExcursao::descadastrarExcursao(Email email) {
         }
     }
 }
-void CntrApresentacaoExcursao::listarExcursoes(Email email) {
-    list<Excursao>excursoes = cntr->recuperarExcursoes(email);
-    list<Excursao> :: iterator Excursao;
+void CntrApresentacaoExcursao::listarExcursoes() {
+    vector<Excursao>excursoes = cntr->recuperarExcursoes();
+    vector<Excursao> :: iterator Excursao;
     cout << "-------------------------LISTA DE EXCURSOES-------------------------" << endl;
     for(Excursao =excursoes.begin(); Excursao!=excursoes.end(); ++Excursao) {
         mostrarExcursao(*Excursao);

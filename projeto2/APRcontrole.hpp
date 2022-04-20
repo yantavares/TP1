@@ -19,12 +19,12 @@ private:
     Email email;
     IApresentacaoAutenticacao *cntrApresentacaoAutenticacao;
     IApresentacaoUsuario *cntrApresentacaoUsuario;
-    //IApresentacaoImovel *cntrApresentacaoImovel;
+    IApresentacaoExcursao *cntrApresentacaoExcursao;
 public:
     void executar();
     void setCntrApresentacaoAutenticacao(IApresentacaoAutenticacao*);
     void setCntrApresentacaoUsuario(IApresentacaoUsuario*);
-    //void setCntrApresentacaoImovel(IApresentacaoImovel*);
+    void setCntrApresentacaoExcursao(IApresentacaoExcursao*);
 };
 
 inline void CntrApresentacaoControle::setCntrApresentacaoAutenticacao(IApresentacaoAutenticacao *cntr) {
@@ -35,8 +35,8 @@ inline void CntrApresentacaoControle::setCntrApresentacaoUsuario(IApresentacaoUs
     cntrApresentacaoUsuario = cntr;
 }
 
-//inline void CntrApresentacaoControle::setCntrApresentacaoImovel(IApresentacaoImovel *cntr) {
-    //cntrApresentacaoImovel = cntr;
-//}
+inline void CntrApresentacaoControle::setCntrApresentacaoExcursao(IApresentacaoExcursao *cntr) {
+    cntrApresentacaoExcursao = cntr;
+}
 
-#endif // CONTROLADORAAPTCONTROLE_H_INCLUDED
+#endif

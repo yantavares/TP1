@@ -11,17 +11,13 @@
 #include "entidades.hpp"
 #include "interfaces.hpp"
 
-#define CLR_SCR system("cls");
 
 class CntrApresentacaoExcursao:public IApresentacaoExcursao {
 private:
     IServicoExcursao *cntr;
-    Codigo ExcursaoGeradorCodigo();
-    Codigo propostaGeradorCodigo();
 
     void mostrarExcursao(Excursao);
     void listarExcursoes();
-    void listarExcursoes(Email);
     void listarExcursao();
     void cadastrarExcursao(Email);
     void editarExcursao(Email);

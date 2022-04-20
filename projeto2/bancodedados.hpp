@@ -4,7 +4,7 @@
 #include <iostream>
 #include <algorithm>
 #include <string.h>
-#include <list>
+#include <random>
 #include <vector>
 #include "dominios.hpp"
 #include "entidades.hpp"
@@ -19,14 +19,25 @@ public:
     static vector<string> emails;
     static vector<Usuario> usuarios;
 
-    static list<Excursao> excursoes;
-    static list<Sessao> sessoes;
+    // static vector<Excursao> excursoes;
+    // static vector<Sessao> sessoes;
 
     int acharIndice(string);
     bool removerUsuario(Email);
     bool cadastrarUsuario(Usuario);
     bool alterarUsuario(Usuario);
     bool autenticar(Email, Senha);
+
+    // bool cadastrarExcursao(Excursao excursao);
+    // Codigo gerarCodigo();
+    // Excursao pesquisarExcursao(Codigo codigo);
+    // bool deletarExcursao(Codigo codigo);
+    // vector<Excursao> recuperarExcursoes();
+
+    // bool cadastrarSessao(Sessao sessao);
+    // Sessao pesquisarSessao(Codigo codigo);
+    // bool deletarSessao(Codigo codigo);
+    // vector<Sessao> recuperarSessoes();
 
 };
 
